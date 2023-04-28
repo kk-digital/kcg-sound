@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://decvvhqnb5kg6"]
+
+[ext_resource type="Script" path="res://Player.cs" id="1_timia"]
+[ext_resource type="Texture2D" uid="uid://bexewda7bomjs" path="res://placeholdersprite.png" id="2_ttis2"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_timia")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(362, 277)
+texture = ExtResource("2_ttis2")
