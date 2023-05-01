@@ -39,15 +39,28 @@ namespace kcgsound.source.AudioTest
 
         public void InitStage1()
         {
-            AddAssetByPath("res://testaudioassets/CoreMech.ogg");
+            AddAssetByPath("res://testaudioassets/CoreMechStart.ogg");
             AddAssetByPath("res://testaudioassets/CoreShotStart.ogg");
+            AddAssetByPath("res://testaudioassets/CoreBass.ogg");
             AddAssetByPath("res://testaudioassets/Atmo.ogg");
+            AddAssetByPath("res://testaudioassets/Reflection.ogg");
         }
 
         public AudioStreamPlayer2D PlayAudio(int assetId, Node parent)
         {
+            
+            // test function TODO: remove
+            
             var audioStreamPlayer = new AudioStreamPlayer2D();
-            audioStreamPlayer.Stream = GD.Load(GetAssetFilePathFromId(assetId)) as AudioStreamOggVorbis;
+
+            var audioStreamTest = new AudioStreamOggVorbis();
+            audioStreamTest = GD.Load(GetAssetFilePathFromId(assetId)) as AudioStreamOggVorbis;
+            
+            var audioStreamTest2 = new AudioStreamOggVorbis();
+            audioStreamTest2.PacketSequence = audioStreamTest.PacketSequence;
+
+            audioStreamPlayer.Stream = audioStreamTest2;
+            
             audioStreamPlayer.Bus = "Master";
             parent.AddChild(audioStreamPlayer);
             audioStreamPlayer.Play();

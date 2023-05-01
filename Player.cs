@@ -15,6 +15,8 @@ public partial class Player : Node2D
 		soundNode = GameState.AudioAssetManager.PlayAudio(0, GetNode("/root/Player"));
 		soundNode = GameState.AudioAssetManager.PlayAudio(1, GetNode("/root/Player"));
 		soundNode = GameState.AudioAssetManager.PlayAudio(2, GetNode("/root/Player"));
+		soundNode = GameState.AudioAssetManager.PlayAudio(3, GetNode("/root/Player"));
+		soundNode = GameState.AudioAssetManager.PlayAudio(4, GetNode("/root/Player"));
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
