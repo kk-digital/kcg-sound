@@ -10,7 +10,11 @@ public partial class Player : Node2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		soundNode = AudioManager.PlayAudio(1, GetNode("/root/Player"));
+		GameState.InitGameState();
+		// add and play our test audio
+		soundNode = GameState.AudioAssetManager.PlayAudio(0, GetNode("/root/Player"));
+		soundNode = GameState.AudioAssetManager.PlayAudio(1, GetNode("/root/Player"));
+		soundNode = GameState.AudioAssetManager.PlayAudio(2, GetNode("/root/Player"));
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
