@@ -1,7 +1,4 @@
-using Godot;
-using System;
-
-public partial class SoundAsset : Node
+public class SoundAsset
 {
 	public string FileName;
 	public float SoundLength;

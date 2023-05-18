@@ -1,21 +1,18 @@
 using Godot;
 using System;
 
-public partial class SoundManager : Node
+public partial class SoundManager
 {
 	[Export]
 	public int soundAssetId = 0;
-	public override void _Ready()
+
+	public static void Init()
 	{
-		GD.Print("asdasd");
+		GD.Print("INITIALIZED SOUND MANAGER");
 	}
 
-	public void PlaySound(int SoundAssetId = 2) 
+	public void PlaySound(int SoundAssetId = 0) 
 	{
 		GD.Print("Plays sound of ID " + GD.VarToStr(SoundAssetId));
-	}
-
-	public override void _Process(double delta)
-	{
 	}
 }
