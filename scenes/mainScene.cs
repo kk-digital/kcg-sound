@@ -7,6 +7,7 @@ public partial class mainScene : Node2D
 	{
 		SoundAssetManager.Init();
 		SoundManager.Init();
+		AudioSystem.GameState.InitGameState();
 	}
 
 	public override void _Process(double delta)

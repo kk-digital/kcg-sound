@@ -1,10 +1,15 @@
-﻿namespace kcgsound.source.AudioTest;
+﻿using Godot;
+
+//namespace kcgsound.source.AudioTest;
+namespace AudioSystem;
 
 public class AudioAsset
 {
     public string FilePath;
-    public int Index;
-    //public float AudioLength;
-    //enum AudioAssetType
-
+	public string FileName;
+	public int SoundID;
+	public float SoundLength;
+	public bool IsLoaded;
+    public Texture Icon;
+	public int RawSoundData;
 }

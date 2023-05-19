@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace kcgsound.source.AudioTest
+namespace AudioSystem
 {
     public class AudioAssetList
     {
-        public List<AudioAsset>assets = new List<AudioAsset>();
+        public List<AudioAsset>assets = new List<AudioAsset>(); 
 
         public void AddAsset(AudioAsset asset)
         {

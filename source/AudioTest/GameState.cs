@@ -1,4 +1,4 @@
-﻿namespace kcgsound.source.AudioTest;
+﻿namespace AudioSystem;
 
 public static class GameState
 {
@@ -10,7 +10,6 @@ public static class GameState
     public static void InitGameState()
     {
         AudioAssetManager.InitStage1();
-
     }
     
 }
