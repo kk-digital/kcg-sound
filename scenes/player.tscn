@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfqli5myk31x2"]
+[gd_scene load_steps=3 format=3 uid="uid://bf0mlfnf70jet"]
 
 [ext_resource type="Script" path="res://scenes/Player.cs" id="1_jrcu3"]
-[ext_resource type="Texture2D" uid="uid://bexewda7bomjs" path="res://placeholdersprite.png" id="2_nps57"]
+[ext_resource type="Texture2D" uid="uid://bexewda7bomjs" path="res://assets/placeholdersprite.png" id="2_aoimp"]
 
 [node name="Player" type="Node2D"]
 position = Vector2(714, 411)
@@ -9,4 +9,4 @@ script = ExtResource("1_jrcu3")
 
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(-3, 0)
-texture = ExtResource("2_nps57")
+texture = ExtResource("2_aoimp")

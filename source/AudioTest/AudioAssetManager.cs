@@ -50,11 +50,11 @@ namespace AudioSystem
 
         public void InitStage1()
         {
-            RegisterSoundAsset("res://testaudioassets/CoreMechStart.ogg", "Core_Mech", "core_mech.png");
-            RegisterSoundAsset("res://testaudioassets/CoreShotStart.ogg", "Core_Shock", "core_shock.png");
-            RegisterSoundAsset("res://testaudioassets/CoreBass.ogg", "Core_Bass", "core_bass.png");
-            RegisterSoundAsset("res://testaudioassets/Atmo.ogg", "Atmo", "atmo.png");
-            RegisterSoundAsset("res://testaudioassets/Reflection.ogg", "Reflection", "reflection.png");
+            RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "Core_Mech", "core_mech.png");
+            RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "Core_Shock", "core_shock.png");
+            RegisterSoundAsset("res://assets/test_audio_assets/CoreBass.ogg", "Core_Bass", "core_bass.png");
+            RegisterSoundAsset("res://assets/test_audio_assets/Atmo.ogg", "Atmo", "atmo.png");
+            RegisterSoundAsset("res://assets/test_audio_assets/Reflection.ogg", "Reflection", "reflection.png");
 
             LoadSoundAssets();
         }
@@ -79,9 +79,20 @@ namespace AudioSystem
                 if (assets[x].IsLoaded == false)
                 {
                     LoadAudioAsset(x);
+                    //PlaySoundAssets();
                 }
             }
         }
+
+        /*
+        public void PlaySoundAssets()
+        {
+            for(int x = 0; x < assets.Capacity; x++)
+            {
+                PlayAudio(x, new Node());
+            }
+        }
+        */
 
         public AudioStreamOggVorbis LoadAudioAsset(int assetId)
         {
@@ -95,6 +106,14 @@ namespace AudioSystem
             GD.Print("Sucesfully loaded ID " + assetId);
             return audioStreamTest2;
         }
+
+        /*
+        public Node2D CreateNode2D()
+        {
+            Node2D newNode = new Node2D();
+            AddChild(newNode) // Doesn't work
+        }
+        */
 
         public AudioStreamPlayer2D PlayAudio(int assetId, Node parent)
         {
