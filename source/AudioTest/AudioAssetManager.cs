@@ -8,7 +8,6 @@ namespace AudioSystem
     public partial class AudioAssetManager : Node
     {   
         public List<AudioAsset>assets = new List<AudioAsset>();
-        //Godot.Collections.Array<Node2D> = new Godot.Collections.Array<Node2D>;
         public Node2D player;
 
         public void AddAsset(AudioAsset asset)
@@ -47,7 +46,7 @@ namespace AudioSystem
 
         public void InitStage1(Node2D player_pass)
         {
-            player = player_pass;
+            player = player_pass; // Reference to get AudioPlayer for function PlayAudio()
 
             RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "Core_Mech", "core_mech.png");
             RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "Core_Shock", "core_shock.png");
@@ -57,8 +56,7 @@ namespace AudioSystem
             RegisterSoundAsset("res://assets/test_audio_assets/CoreShot.ogg", "Core_Shot", "reflection.png");
 
             LoadSoundAssets();
-            //PlaySoundAssets();
-            Update();
+            PlayAudio(0);
         }
 
         public void RegisterSoundAsset(string path, string name, string iconPath)
@@ -89,7 +87,7 @@ namespace AudioSystem
         {
             GD.Print("Playing all sound assets");
 
-            for(int x = 0; x < assets.Count; x++) // assets.Capacity
+            for(int x = 0; x < assets.Count; x++)
             {
                 if (assets[x].IsLoaded == true)
                 {
@@ -123,52 +121,6 @@ namespace AudioSystem
 
             return audioStreamPlayer;
         }
-
-        public void Update()
-        {
-            PlayAudio(0);
-            //System.Timers.Timer t = new System.Timers.Timer(1000);
-            PlayAudio(1);
-            //System.Timers.Timer s = new System.Timers.Timer(1000);
-            PlayAudio(2);
-        }
-
-        /* // Timer I want to keep track of time offset
-        public static System.Timers.Timer my_timer = new System.Timers.Timer(1000);
-
-        public static void Timer_Offset()
-        {
-            public static int secondsCount = 0;
-            my_timer.Elapsed += Update;
-            my_timer.Enabled = true;
-            my_timer.AutoReset = true;
-            my_timer.Start();
-        }
-        */
-
-        /* // To track offset, doesn't work, freezes program
-        public int timeC, timeS;
-        private void Timer_tick()
-        {
-            while(true)
-            {
-                timeC++;
-                GD.Print("Sub-tick");
-                if(timeC >= 100)
-                {
-                    GD.Print("Tick");
-                    timeS++;
-                    timeC = 0;
-                    if(timeS >= 60)
-                    {
-                        Update();
-                    }
-
-                }
-            }
-
-        }
-        */
     }
 }
 

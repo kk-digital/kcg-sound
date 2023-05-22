@@ -13,4 +13,14 @@ public static class GameState
         AudioAssetManager.InitStage1(player);
     }
     
+    public static void PlayAudio(int name)
+    {
+        AudioAssetManager.PlayAudio(name);
+    }
+
+    public static int getSoundListCount()
+    {
+        return AudioAssetManager.assets.Count;
+    }
+
 }
