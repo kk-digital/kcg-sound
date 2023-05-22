@@ -5,18 +5,13 @@ using System;
 namespace Player;
 public partial class Player : Node2D
 {
-	private AudioStreamPlayer2D soundNode;
+	//public Node tmp = GetNode("/root/MainScene/Player");
+	//public AudioStreamPlayer2D soundNode = GetNode("/Audio");
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		GameState.InitGameState();
-		// add and play our test audio
-		soundNode = GameState.AudioAssetManager.PlayAudio(0, GetNode("/root/Player"));
-		soundNode = GameState.AudioAssetManager.PlayAudio(1, GetNode("/root/Player"));
-		soundNode = GameState.AudioAssetManager.PlayAudio(2, GetNode("/root/Player"));
-		soundNode = GameState.AudioAssetManager.PlayAudio(3, GetNode("/root/Player"));
-		soundNode = GameState.AudioAssetManager.PlayAudio(4, GetNode("/root/Player"));
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

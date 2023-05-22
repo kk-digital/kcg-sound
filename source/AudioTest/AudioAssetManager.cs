@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
-//using Player;
+using System.Collections.Generic;
 using Godot;
+using Player;
+using System;
 
-//namespace kcgsound.source.AudioTest
 namespace AudioSystem
 {
-    public class AudioAssetManager
+    public partial class AudioAssetManager : Node
     {   
         public List<AudioAsset>assets = new List<AudioAsset>();
+        //Godot.Collections.Array<Node2D> = new Godot.Collections.Array<Node2D>;
+        public Node2D player;
 
         public void AddAsset(AudioAsset asset)
         {
@@ -30,33 +32,33 @@ namespace AudioSystem
         }
 
         public int SoundNameToId(string name)
-        {
-            switch(name)
+        {            
+            foreach (AudioAsset i in assets)
             {
-                case "explosion":
-                    return 1;
+                if (i.FileName == name)
+                {
+                    GD.Print("Found ID of " + name);
+                    return i.SoundID;
+                }
             }
+            GD.Print("ERROR: " + name + " was not found");
             return 0;
         }
 
-        /*
-            To see:
-                System.Collections.Generic.Dictionary<int, int> testing = new()
-                List<int> test = new();
-                Struct C#
-                Ref C#
-                Agents
-        */
-
-        public void InitStage1()
+        public void InitStage1(Node2D player_pass)
         {
+            player = player_pass;
+
             RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "Core_Mech", "core_mech.png");
             RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "Core_Shock", "core_shock.png");
             RegisterSoundAsset("res://assets/test_audio_assets/CoreBass.ogg", "Core_Bass", "core_bass.png");
             RegisterSoundAsset("res://assets/test_audio_assets/Atmo.ogg", "Atmo", "atmo.png");
             RegisterSoundAsset("res://assets/test_audio_assets/Reflection.ogg", "Reflection", "reflection.png");
+            RegisterSoundAsset("res://assets/test_audio_assets/CoreShot.ogg", "Core_Shot", "reflection.png");
 
             LoadSoundAssets();
+            //PlaySoundAssets();
+            Update();
         }
 
         public void RegisterSoundAsset(string path, string name, string iconPath)
@@ -74,58 +76,107 @@ namespace AudioSystem
         {
             GD.Print("Loading all sound assets");
 
-            for(int x = 0; x < assets.Capacity; x++)
+            for(int x = 0; x < assets.Count; x++)
             {
                 if (assets[x].IsLoaded == false)
                 {
                     LoadAudioAsset(x);
-                    //PlaySoundAssets();
                 }
             }
         }
 
-        /*
         public void PlaySoundAssets()
         {
-            for(int x = 0; x < assets.Capacity; x++)
+            GD.Print("Playing all sound assets");
+
+            for(int x = 0; x < assets.Count; x++) // assets.Capacity
             {
-                PlayAudio(x, new Node());
+                if (assets[x].IsLoaded == true)
+                {
+                    PlayAudio(x);
+                }
             }
         }
-        */
 
-        public AudioStreamOggVorbis LoadAudioAsset(int assetId)
+        public void LoadAudioAsset(int assetId)
         {
             var audioStreamTest = new AudioStreamOggVorbis();
             audioStreamTest = GD.Load(GetAssetFilePathFromId(assetId)) as AudioStreamOggVorbis;
-            
-            var audioStreamTest2 = new AudioStreamOggVorbis();
-            audioStreamTest2.PacketSequence = audioStreamTest.PacketSequence;
+
+            assets[assetId].Stream = audioStreamTest;
             assets[assetId].IsLoaded = true;
 
-            GD.Print("Sucesfully loaded ID " + assetId);
-            return audioStreamTest2;
+            GD.Print("Sucesfully loaded ID " + assetId + " " + assets[assetId].IsLoaded);
         }
 
-        /*
-        public Node2D CreateNode2D()
+        public AudioStreamPlayer2D PlayAudio(int assetId)
         {
-            Node2D newNode = new Node2D();
-            AddChild(newNode) // Doesn't work
+            GD.Print("Playing audio : " + assets[assetId].FileName);
+
+            var audioStreamPlayer = new AudioStreamPlayer2D();
+            audioStreamPlayer.Stream = assets[assetId].Stream;
+            audioStreamPlayer.Bus = "Master";
+
+            player.AddChild(audioStreamPlayer);
+            audioStreamPlayer.Play();
+            GD.Print("Sucesfully played " + assets[assetId].FileName);
+
+            return audioStreamPlayer;
+        }
+
+        public void Update()
+        {
+            PlayAudio(0);
+            //System.Timers.Timer t = new System.Timers.Timer(1000);
+            PlayAudio(1);
+            //System.Timers.Timer s = new System.Timers.Timer(1000);
+            PlayAudio(2);
+        }
+
+        /* // Timer I want to keep track of time offset
+        public static System.Timers.Timer my_timer = new System.Timers.Timer(1000);
+
+        public static void Timer_Offset()
+        {
+            public static int secondsCount = 0;
+            my_timer.Elapsed += Update;
+            my_timer.Enabled = true;
+            my_timer.AutoReset = true;
+            my_timer.Start();
         }
         */
 
-        public AudioStreamPlayer2D PlayAudio(int assetId, Node parent)
+        /* // To track offset, doesn't work, freezes program
+        public int timeC, timeS;
+        private void Timer_tick()
         {
-            var audioStreamPlayer = new AudioStreamPlayer2D();
-            audioStreamPlayer.Stream = LoadAudioAsset(assetId);
+            while(true)
+            {
+                timeC++;
+                GD.Print("Sub-tick");
+                if(timeC >= 100)
+                {
+                    GD.Print("Tick");
+                    timeS++;
+                    timeC = 0;
+                    if(timeS >= 60)
+                    {
+                        Update();
+                    }
 
-            audioStreamPlayer.Bus = "Master";
-            parent.AddChild(audioStreamPlayer);
-            audioStreamPlayer.Play();
+                }
+            }
 
-            GD.Print("Sucesfully played ID " + assetId);
-            return audioStreamPlayer;
         }
+        */
     }
 }
+
+/*
+    To see:
+        System.Collections.Generic.Dictionary<int, int> testing = new()
+        List<int> test = new();
+        Struct C#
+        Ref C#
+        Agents
+*/

@@ -10,3 +10,5 @@ script = ExtResource("1_jrcu3")
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(-3, 0)
 texture = ExtResource("2_aoimp")
+
+[node name="Audio" type="AudioStreamPlayer2D" parent="."]
