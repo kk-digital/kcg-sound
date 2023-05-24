@@ -1,18 +1,11 @@
 using Godot;
 using System;
 
-public partial class SoundManager
+public static class SoundManager
 {
-	[Export]
-	public int soundAssetId = 0;
-
-	public static void Init()
+	public static void Init() // Placeholder
 	{
 		GD.Print("INITIALIZED SOUND MANAGER");
 	}
 
-	public void PlaySound(int SoundAssetId = 0) 
-	{
-		GD.Print("Plays sound of ID " + GD.VarToStr(SoundAssetId));
-	}
 }

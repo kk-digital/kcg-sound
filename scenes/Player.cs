@@ -2,13 +2,12 @@ using Godot;
 using AudioSystem;
 using System;
 
-namespace Player;
+namespace Entity;
 public partial class Player : Node2D
 {
-	//public Node tmp = GetNode("/root/MainScene/Player");
 	//public AudioStreamPlayer2D soundNode = GetNode("/Audio");
-
 	// Called when the node enters the scene tree for the first time.
+
 	public override void _Ready()
 	{
 		
