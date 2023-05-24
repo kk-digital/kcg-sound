@@ -1,18 +1,18 @@
 # kcg-sound
 
-Sound assets directory                                 @ assets/test_audio_assets
-Sounds list (when loaded by system)                    @ SoundGlobal.assets
+Sound assets directory                                @ root/assets/test_audio_assets
+Sound list (when loaded by system)                    @ AudioList.assets
 
-// SoundApi
+# SoundApi > Master Manager
 
-listManager         # Gathers data of sound assets     @ AudioAssetList
+// listManager         # Gathers data of sound assets     @ AudioAssetList
 
     / GetListLength          ()                                           -> int
     / GetAssetFromId         (int Id)                                     -> AudioAsset
     / GetAssetFilePathFromId (int Id)                                     -> string
     / SoundNameToId          (string name)                                -> int
 
-assetManager        # Register sounds & loads them     @ AudioAssetManager
+// assetManager        # Register sounds & loads them     @ AudioAssetManager
 
     / RegisterSoundAsset    (string path, string name, string iconPath)   -> AudioStreamPlayer2D
     / AddAsset              (AudioAsset asset)                            -> void
@@ -20,7 +20,7 @@ assetManager        # Register sounds & loads them     @ AudioAssetManager
     / LoadSoundAssets       ()                                            -> void
     / LoadAudioAsset        (int assetId)                                 -> void
 
-playbackManager     # Plays sounds                     @ AudioPlaybackManager
+// playbackManager     # Plays sounds                     @ AudioPlaybackManager
 
     / PlayAudio              (int assetId, Node2D who)                    -> void
 
