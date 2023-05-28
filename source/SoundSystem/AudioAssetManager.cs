@@ -8,67 +8,88 @@ public class AudioAssetManager
 {
     public void Init()
     {
-        GD.Print("Registering sounds"); // Debug purpose
+        GD.Print("Registering sounds");
 
-        RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "Core_Mech", "core_mech.png");
-        RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "Core_Shock", "core_shock.png");
-        RegisterSoundAsset("res://assets/test_audio_assets/CoreBass.ogg", "Core_Bass", "core_bass.png");
+        RegisterSoundAssetList("TEST_SEQUENCE",
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "CoreMech", "core_mech.png"),
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "CoreShock", "core_shock.png"),
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreBass.ogg", "CoreBass", "core_bass.png"));
+
+        /*
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "CoreMech", "core_mech.png");
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "CoreShock", "core_shock.png");
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreBass.ogg", "CoreBass", "core_bass.png");
         RegisterSoundAsset("res://assets/test_audio_assets/Atmo.ogg", "Atmo", "atmo.png");
         RegisterSoundAsset("res://assets/test_audio_assets/Reflection.ogg", "Reflection", "reflection.png");
-        RegisterSoundAsset("res://assets/test_audio_assets/CoreShot.ogg", "Core_Shot", "reflection.png");
+        RegisterSoundAsset("res://assets/test_audio_assets/CoreShot.ogg", "CoreShot", "reflection.png");
+        */
+        GD.Print("Registered sounds succesfully");
 
-        GD.Print("Registered sounds succesfully"); // Debug purpose
-        LoadSoundAssets();
-    }
-
-    public int RegisterSoundAsset(string path, string name, string iconPath)
-    {
-        AudioAsset asset = new AudioAsset();
-        asset.FilePath = path;
-        asset.FileName = name;
-        //asset.Icon =  ResourceLoader.Load(iconPath) as Texture; // Works, enable when textures are ready
-        asset.IsLoaded = false;
-        AddAsset(asset);
-        asset.SoundID = SoundApi.list.Capacity;
-
-        return asset.SoundID;
+        LoadAllSoundAssets();
     }
 
     public void AddAsset(AudioAsset asset)
-    {
-        SoundApi.list.Add(asset);
-    }
+    { SoundApi.list.allAudio.Add(asset); }
 
     public void RemoveAsset(AudioAsset asset)
+    { SoundApi.list.allAudio.Remove(asset); }
+
+    public int RegisterSoundAsset(string path, string name, string iconPath)
     {
-        SoundApi.list.Remove(asset);
+        AudioAsset asset    = new AudioAsset();
+        asset.FilePath      = path;
+        asset.FileName      = name;
+        //asset.Icon        = ResourceLoader.Load(iconPath) as Texture; // Works, enable when textures are ready
+        asset.IsLoaded      = false;
+        AddAsset(asset);
+        asset.SoundID       = SoundApi.list.allAudio.Count - 1; // For the index to start at 0
+        GD.Print("Registered : " + name + " ID " + asset.SoundID);
+        return asset.SoundID;
     }
 
-    public void LoadSoundAssets()
+    public void RegisterSoundAssetList(string listName, params int[] assetIds)
     {
-        GD.Print("Loading all sound assets"); // Debug purpose
-        for(int x = 0; x < SoundApi.list.Count; x++)
+        List<AudioAsset> newSoundList = new List<AudioAsset>();
+        for (int assetId = 0; assetId <= (assetIds.Length - 1); assetId++)
         {
-            if (SoundApi.list[x].IsLoaded == false)
+            GD.Print("Added : " + assetId);
+            newSoundList.Add(SoundApi.list.allAudio[assetId]);
+        }
+
+        SoundApi.list.allAudioLists.Add(listName, newSoundList);
+        GD.Print($"New list created ({0}) of {1} size", listName, (newSoundList.Count-1));
+    }
+
+    public void LoadAllSoundAssets()
+    {
+        GD.Print("Loading all sound assets");
+        for(int x = 0; x < SoundApi.list.allAudio.Count; x++)
+        {
+            if (SoundApi.list.allAudio[x].IsLoaded == false)
             {
-                LoadAudioAsset(x);
+                LoadSoundStream(x);
             }
         }
     }
 
-    public void LoadAudioAsset(int assetId)
+    public void LoadSoundStream(int assetId)
     {
         var audioStreamTest = new AudioStreamOggVorbis();
-        audioStreamTest = GD.Load(SoundApi.listManager.GetAssetFilePathFromId(assetId)) as AudioStreamOggVorbis;
+        audioStreamTest     = GD.Load(SoundApi.listManager.GetAssetFilePathFromId(assetId)) as AudioStreamOggVorbis;
 
-        SoundApi.list[assetId].Stream = audioStreamTest;
-        SoundApi.list[assetId].IsLoaded = true;
-        GD.Print("Sucesfully loaded sound " + SoundApi.list[assetId].FileName); // Debug purpose
+        SoundApi.list.allAudio[assetId].Stream   = audioStreamTest;
+        SoundApi.list.allAudio[assetId].IsLoaded = true;
+        GD.Print("Sucesfully loaded sound " + SoundApi.list.allAudio[assetId].FileName);
     }
 
     /*
-    public void Update(GameState gameState, int timeTick, float timeReal)
+    public void CheckAudioList()
     {
+        GD.Print("All Audio : ");
+        foreach(AudioAsset i in SoundApi.list.allAudio)
+        {
+            GD.Print(i + " / Total capactiy" + SoundApi.list.allAudio.Count);
+        }
     }
     */
 }

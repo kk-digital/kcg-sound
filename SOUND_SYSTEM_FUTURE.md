@@ -29,3 +29,6 @@
     // STEP SOUND
     //  Would work with a raycast pointing to Vector2.DOWN
     //  Tile ID represent different materials, therefore different soundstep
+
+    // ARRAY OF SOUNDS
+    // Does sound x belong to an Array?

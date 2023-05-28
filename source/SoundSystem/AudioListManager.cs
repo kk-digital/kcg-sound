@@ -5,28 +5,28 @@ using System;
 namespace AudioSystem;
 public class AudioListManager
 {
-    public int GetListLength()
+    public int GetListLength(string listName)
     {
-        return SoundApi.list.Count;
+        return SoundApi.list.allAudioLists[listName].Count-1;
     }
 
     public AudioAsset GetAssetFromId(int Id)
     {
-        return SoundApi.list[Id];
+        return SoundApi.list.allAudio[Id];
     }
 
     public string GetAssetFilePathFromId(int Id)
     {
-        return SoundApi.list[Id].FilePath;
+        return SoundApi.list.allAudio[Id].FilePath;
     }
 
-    public int SoundNameToId(string name)
+    public int SoundNameToId(string name) // Computationally expensive
     {            
-        foreach (AudioAsset i in SoundApi.list)
+        foreach (AudioAsset audioAsset in SoundApi.list.allAudio)
         {
-            if (i.FileName == name)
+            if (audioAsset.FileName == name)
             {
-                return i.SoundID;
+                return audioAsset.SoundID;
             }
         }
         return 0;

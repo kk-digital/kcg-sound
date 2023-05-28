@@ -1,16 +1,19 @@
 //using System;
+using Godot;
 
 namespace AudioSystem;
 public partial class SoundTrigger : Node2D
 {
 	public float timePass = 0f;
 	public int timeTicks = 0;
-	public int sound_number = -1;
+	public int sound_number = 0;
+    public int entityId;
 
     public override void _Ready()
     {
 		SetPhysicsProcess(false);
         AudioEmitterManager.emitters.Add(this);
+        entityId = EntityList.AddEntity(this);
     }
 
     public void Init()
@@ -36,9 +39,12 @@ public partial class SoundTrigger : Node2D
 
     private void Play()
     {
-        sound_number++;
-        //sound_number = Math.Clamp(sound_number, 0, SoundApi.listManager.GetListLength());
-        SoundApi.playbackManager.PlayAudio(sound_number, this);
-    }
+        // Play audio:
+        //SoundApi.playbackManager.PlayAudio(sound_number, entityId);
 
+        // Play sequences:
+        sound_number = SoundApi.playbackManager.PlayAudioInSequence("TEST_SEQUENCE", entityId, sound_number);
+        //sound_number = SoundApi.playbackManager.PlayAudioPseudoRandomly("TEST_SEQUENCE", entityId, sound_number);
+        //SoundApi.playbackManager.PlayAudioRandomly("TEST_SEQUENCE", entityId);
+    }
 }
