@@ -5,30 +5,35 @@ using System;
 namespace AudioSystem;
 public class AudioListManager
 {
-    public int GetListLength(string listName)
+    // Returns the given list length minus one to ensure no bad index error
+    public int GetListLength(string list_name)
     {
-        return SoundApi.list.allAudioLists[listName].Count-1;
+        return SoundApi.audio_list.all_audio_lists[list_name].Count-1;
     }
 
-    public AudioAsset GetAssetFromId(int Id)
+    // Returns audio asset from ID
+    public AudioAsset GetAssetFromId(int id)
     {
-        return SoundApi.list.allAudio[Id];
+        return SoundApi.audio_list.all_audio[id];
     }
 
+    // Returns audio asset file path from ID
     public string GetAssetFilePathFromId(int Id)
     {
-        return SoundApi.list.allAudio[Id].FilePath;
+        return SoundApi.audio_list.all_audio[Id].file_path;
     }
 
-    public int SoundNameToId(string name) // Computationally expensive
+    // Returns audio name from ID
+    public int SoundNameToId(string name)
     {            
-        foreach (AudioAsset audioAsset in SoundApi.list.allAudio)
+        foreach (AudioAsset audio_asset in SoundApi.audio_list.all_audio)
         {
-            if (audioAsset.FileName == name)
+            if (audio_asset.file_name == name)
             {
-                return audioAsset.SoundID;
+                return audio_asset.sound_id;
             }
         }
+        GD.Print("list_manager : ERROR -> 'SoundNameToId' | Sound not found");
         return 0;
     }
 }

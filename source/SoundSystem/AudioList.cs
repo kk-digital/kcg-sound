@@ -1,24 +1,13 @@
-using Godot;
-using System;
 using System.Collections.Generic;
 
 namespace AudioSystem;
 public class AudioList
 {
-	public Dictionary<string, List<AudioAsset>> allAudioLists = new Dictionary<string, List<AudioAsset>>();
-	public List<AudioAsset> allAudio = new List<AudioAsset>();
+	// Contains lists packed with audio, accesible by unique string ID
+	public Dictionary<string, List<AudioAsset>> all_audio_lists = new Dictionary<string, List<AudioAsset>>();
 
-	public List<AudioAsset> walkingRock = new List<AudioAsset>();
-	public List<AudioAsset> walkingMetal = new List<AudioAsset>();
+	// All audio on the game, accesible by audio asset ID
+	public List<AudioAsset> all_audio = new List<AudioAsset>();
 
-	public List<AudioAsset> weaponMachineGun = new List<AudioAsset>();
-
-	public List<AudioAsset> shootRock = new List<AudioAsset>();
-	public List<AudioAsset> shootMetal = new List<AudioAsset>();
-
-	public void Init()
-	{
-	}
-	
 	//public AudioEffect aB = AudioServer.GetBusEffect(AudioServer.GetBusIndex("Name"), 0); // For future Sound Systems
 }

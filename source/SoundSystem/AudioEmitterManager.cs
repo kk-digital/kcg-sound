@@ -3,13 +3,14 @@ using System.Collections.Generic;
 namespace AudioSystem;
 public static class AudioEmitterManager
 {
-    public static List<TestEntity> emitters = new List<TestEntity>(); 
+    public static List<GameObjectRef> audio_emitters = new List<GameObjectRef>(); 
     
+    // Initialize all sound emitters once sounds are loaded
     public static void Init()
     {
-        foreach (TestEntity a in emitters)
+        foreach (GameObjectRef emitter in audio_emitters)
         {
-            a.Init();
+            emitter.Init();
         }
     }
 }

@@ -8,10 +8,11 @@ public static class GameState
     
     public static void InitGameState()
     {
-        SoundAssetManager.Init();           // Placeholder, following instructions
-        SoundManager.Init();                // Placeholder, following instructions
-        SoundApi.assetManager.Init();
+        // (Fela)
+        // Initialize sound | Create lists from subfolders and register & load all the sounds
+        SoundApi.audio_asset_manager.Init();
+
+        // Initialize sound emitters once sounds are loaded
         AudioEmitterManager.Init();
-        
     }
 }

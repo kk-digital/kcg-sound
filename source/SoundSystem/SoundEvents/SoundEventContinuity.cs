@@ -2,9 +2,6 @@ using System.Collections.Generic;
 
 public class SoundEventContinuity
 {
+    // Store local reference of which was the last audio played on audio sequence. Store reference as a list
     public Dictionary<string, int> storedIndex = new Dictionary<string, int>();
 }
-
-/*
-This stores local references to audio indexes, and could handle sound behaviour exeptions with override functions.
-*/

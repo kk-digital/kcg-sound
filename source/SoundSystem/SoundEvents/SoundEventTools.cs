@@ -3,12 +3,12 @@ using AudioSystem;
 using Godot;
 using System.Collections.Generic;
 
-namespace SoundEvent;
-public class SoundEventTools
+namespace AudioEvent;
+public class AudioEventTools
 {
-    public static RandomNumberGenerator rng = new RandomNumberGenerator();
+    // Audio tools for future sound events
 
-	//public AudioEffect aB = AudioServer.GetBusEffect(AudioServer.GetBusIndex("Name"), 0); // For future Sound Systems
+    public static RandomNumberGenerator rng = new RandomNumberGenerator();
 
     public void LowPass(float time, float frequency)
     {
@@ -26,3 +26,5 @@ public class SoundEventTools
     {
     }
 }
+
+//public AudioEffect aB = AudioServer.GetBusEffect(AudioServer.GetBusIndex("Name"), 0); // For future Sound Systems
