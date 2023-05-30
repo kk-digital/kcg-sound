@@ -8,9 +8,9 @@ using System.Collections.Generic;
 namespace AudioSystem;
 public static class EntityList
 {
-    public static List<Node2D> entities = new List<Node2D>();
+    public static List<TestEntity> entities = new List<TestEntity>();
 
-    public static int AddEntity(Node2D which)
+    public static int AddEntity(TestEntity which)
     {
         entities.Add(which);
         int Id = entities.Count - 1;

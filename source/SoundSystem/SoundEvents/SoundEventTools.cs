@@ -14,7 +14,7 @@ public class SoundEventTools
     {
     }
 
-    public void Crossfade(AudioAsset asset_1, AudioAsset asset_2, float time)
+    public void Crossfade(int assetId1, int assetId2, float time)
     {
     }
 

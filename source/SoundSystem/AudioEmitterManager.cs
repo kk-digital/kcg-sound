@@ -3,11 +3,11 @@ using System.Collections.Generic;
 namespace AudioSystem;
 public static class AudioEmitterManager
 {
-    public static List<SoundTrigger> emitters = new List<SoundTrigger>(); 
+    public static List<TestEntity> emitters = new List<TestEntity>(); 
     
     public static void Init()
     {
-        foreach (SoundTrigger a in emitters)
+        foreach (TestEntity a in emitters)
         {
             a.Init();
         }
