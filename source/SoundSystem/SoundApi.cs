@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using AudioEvent;
 
 namespace AudioSystem;
@@ -9,6 +8,8 @@ public static class SoundApi // SEE README
     public static AudioAssetManager     audio_asset_manager    = new AudioAssetManager();
     public static AudioPlaybackManager  audio_playback_manager = new AudioPlaybackManager();
     public static AudioEventTools       audio_event_tools      = new AudioEventTools();
+    public static AudioContainer        audio_container        = new AudioContainer();
+    public static AudioEmitterManager   audio_emitter_manager  = new AudioEmitterManager();
 
     public static void Init()
     {

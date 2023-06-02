@@ -72,13 +72,13 @@ public class AudioAssetManager
     // Regsiters the sound and assigns an ID to later access it in all_audio list
     public int RegisterSoundAsset(string path, string name, string icon_path)
     {
-        AudioAsset asset    = new AudioAsset();
+        AudioAsset asset     = new AudioAsset();
         asset.file_path      = path;
         asset.file_name      = name;
-        //asset.icon        = ResourceLoader.Load(icon_path) as Texture; // Works, enable when textures are ready
+        //asset.icon         = ResourceLoader.Load(icon_path) as Texture; // Works, enable when textures are ready
         asset.is_loaded      = false;
         AddAudioAsset(asset);
-        asset.sound_id       = SoundApi.audio_list.all_audio.Count - 1; // For the index to start at 0
+        asset.sound_id       = SoundApi.audio_list.all_audio.Count; // For the index to start at 0
         //GD.Print("audio_asset_manager : Registered : " + name + " | ID : " + asset.sound_id + " | Filepath : " + path);
         return asset.sound_id;
     }
@@ -92,7 +92,9 @@ public class AudioAssetManager
             new_sound_list.Add(SoundApi.audio_list.all_audio[asset_id]);
         }
 
-        SoundApi.audio_list.all_audio_lists.Add(list_name, new_sound_list);
+        int list_id = SoundApi.audio_list.all_audio_lists.Count;          // Define list's integer ID
+        SoundApi.audio_container.string_id.Add(list_name, list_id);         // Asign string ID to list's integer ID for easy access
+        SoundApi.audio_list.all_audio_lists.Add(new_sound_list);            // Save sound asset list as integer ID
         GD.Print("audio_asset_manager : New audio_list created (" + list_name + ") of " + new_sound_list.Count + " size");
     }
 

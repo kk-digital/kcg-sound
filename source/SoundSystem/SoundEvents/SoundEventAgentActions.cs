@@ -6,6 +6,7 @@ namespace AudioSystem;
 public static class SoundEventAgentAction
 {
     // Specific behaviour of each sound trigger
+    // REPLACED WITH AUDIO EMITTER AGENT MOVEMENT
 
     public static void  Test(int entityId)
     {
@@ -31,7 +32,9 @@ public static class SoundEventAgentAction
         SoundApi.audio_playback_manager.PlayAudioInSequence(entityId, "Jump");
     }
 }
-/*  // More sounds to do
+
+// More sounds to do
+/*  
 
     public static void  Land(int entityId)
     {

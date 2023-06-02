@@ -1,5 +1,4 @@
 using Godot;
-using Entity;
 
 namespace AudioSystem;
 public static class GameState
@@ -13,6 +12,6 @@ public static class GameState
         SoundApi.audio_asset_manager.Init();
 
         // Initialize sound emitters once sounds are loaded
-        AudioEmitterManager.Init();
+        SoundApi.audio_emitter_manager.Init();
     }
 }

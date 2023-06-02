@@ -9,7 +9,7 @@ public class AudioPlaybackManager
     // Return an available and play-ready audio channel
     public AudioStreamPlayer2D ReturnAvailableChannel(int object_id)
     {
-        Godot.Collections.Array<Godot.Node> channels = EnumGameObject.game_objects[object_id].GetNode<Godot.Node2D>("Audio").GetChildren(); // Get all the audio players
+        Godot.Collections.Array<Godot.Node> channels = SoundApi.audio_emitter_manager.audio_emitters[object_id].GetNode<Godot.Node2D>("Audio").GetChildren(); // Get all the audio players
         int                                 channels_size = channels.Count-1;
         AudioStreamPlayer2D                 audio_stream_player;
 
@@ -35,9 +35,16 @@ public class AudioPlaybackManager
         // Need to make the temporal part work yet
         AudioStreamPlayer2D audio_stream_player = new AudioStreamPlayer2D();
         audio_stream_player.Name                = "AudioTmp";
-        EnumGameObject.game_objects[object_id].AddChild(audio_stream_player);
+        SoundApi.audio_emitter_manager.audio_emitters[object_id].AddChild(audio_stream_player);
         GD.Print("audio_playback_manager : All audio channels on use, creating a new one");
+        audio_stream_player.Finished += () => DeleteChannel(audio_stream_player);
         return audio_stream_player;
+    }
+
+    // Automatically delete the channel after being used
+    private void DeleteChannel(AudioStreamPlayer2D channel)
+    {   
+        channel.QueueFree();
     }
 
     // Plays audio
@@ -50,7 +57,7 @@ public class AudioPlaybackManager
         {
             audio_stream_player      = new AudioStreamPlayer2D();
             audio_stream_player.Name = "AudioTmp";
-            EnumGameObject.game_objects[object_id].AddChild(audio_stream_player);
+            SoundApi.audio_emitter_manager.audio_emitters[object_id].AddChild(audio_stream_player);
         }
         audio_stream_player.Stream   = SoundApi.audio_list.all_audio[asset_id].stream;
         audio_stream_player.Bus      = "Master";
@@ -62,14 +69,14 @@ public class AudioPlaybackManager
     {
         
         AudioStreamPlayer2D audio_stream_player = ReturnAvailableChannel(object_id);
-                        int asset_id           = SoundApi.audio_list_manager.SoundNameToId(assetFileName);
+                        int asset_id            = SoundApi.audio_list_manager.SoundNameToId(assetFileName);
         GD.Print("audio_playback_manager : Playing audio | ID : " + asset_id + " | " + assetFileName);
 
         if(audio_stream_player.Playing)
         {
             audio_stream_player      = new AudioStreamPlayer2D();
             audio_stream_player.Name = "AudioTmp";
-            EnumGameObject.game_objects[object_id].AddChild(audio_stream_player);
+            SoundApi.audio_emitter_manager.audio_emitters[object_id].AddChild(audio_stream_player);
         }
         
         audio_stream_player.Stream   = SoundApi.audio_list.all_audio[asset_id].stream;
@@ -77,30 +84,19 @@ public class AudioPlaybackManager
         audio_stream_player.Play();
     }
 
-    // Plays audio randomly from audio list
-    public void PlayAudioRandomly(int object_id, string asset_list)
-    {
-        int list_length = SoundApi.audio_list_manager.GetListLength(asset_list);
-        int chosen      = rng.RandiRange(0,list_length);
-        int asset_id    = SoundApi.audio_list.all_audio_lists[asset_list][chosen].sound_id;
-
-        GD.Print("audio_playback_manager : Playing audio randomly | ID : " + chosen + " | " + SoundApi.audio_list.all_audio[chosen].file_name);
-        SoundApi.audio_playback_manager.PlayAudio(object_id, asset_id);
-        
-    }
-
     // Plays audio sequencially from a list
     public void PlayAudioInSequence(int object_id, string asset_list)
     {
+        GD.Print("Object ID : " + object_id + " | Asset List : " + asset_list);
         int list_length   = SoundApi.audio_list_manager.GetListLength(asset_list); 
         int current_index = CheckContinuity(object_id, asset_list); // Current sound index to play
     
-        if(current_index  > list_length) // If it's the last one of the audio_list reset to 0
+        if(current_index  >= list_length) // If it's the last one of the audio_list reset to 0
         {  
             current_index = 0;
         }
-
-        int asset_id      = SoundApi.audio_list.all_audio_lists[asset_list][current_index].sound_id;
+        int name_to_id    = SoundApi.audio_list_manager.StringToId(asset_list); // String name of list -> Integer ID of list
+        int asset_id      = SoundApi.audio_list.all_audio_lists[name_to_id][current_index].sound_id; // Integer ID of list  -> Integer ID of sound
         int new_index     = current_index+1; // Next sound index to play
 
         GD.Print("audio_playback_manager : Playing audio in sequence | ID : ", asset_id, " | " + SoundApi.audio_list.all_audio[asset_id].file_name);
@@ -116,11 +112,24 @@ public class AudioPlaybackManager
         int chosen        = rng.RandiRange(0, list_length);
         while(chosen      == current_index)
         {chosen           = rng.RandiRange(0, list_length);}
-        int asset_id      = SoundApi.audio_list.all_audio_lists[asset_list][chosen].sound_id;
 
+        int name_to_id    = SoundApi.audio_list_manager.StringToId(asset_list); // String name of list -> Integer ID of list
+        int asset_id      = SoundApi.audio_list.all_audio_lists[name_to_id][chosen].sound_id; // Integer ID of list  -> Integer ID of sound
         GD.Print("audio_playback_manager : Playing audio in pseudo-sequence | ID : " + chosen + " | " + SoundApi.audio_list.all_audio[chosen].file_name);
         PlayAudio(object_id, asset_id);
         UpdateContinuity(object_id, asset_list, chosen);
+    }
+
+    // Plays audio randomly from audio list
+    public void PlayAudioRandomly(int object_id, string asset_list)
+    {
+        int list_length = SoundApi.audio_list_manager.GetListLength(asset_list);
+        int chosen      = rng.RandiRange(0,list_length);
+        int name_to_id  = SoundApi.audio_list_manager.StringToId(asset_list); // String name of list -> Integer ID of list
+        int asset_id    = SoundApi.audio_list.all_audio_lists[name_to_id][chosen].sound_id; // Integer ID of list  -> Integer ID of sound
+
+        GD.Print("audio_playback_manager : Playing audio randomly | ID : " + chosen + " | " + SoundApi.audio_list.all_audio[chosen].file_name);
+        SoundApi.audio_playback_manager.PlayAudio(object_id, asset_id);
     }
 
     // Acknowledges sound difference for different materials
@@ -156,7 +165,7 @@ public class AudioPlaybackManager
     // Check the continuity of audio list to have the right play index
     public int CheckContinuity(int object_id, string action)
     {
-        var soundContinuity = EnumGameObject.game_objects[object_id].continuity_manager;
+        var soundContinuity = SoundApi.audio_emitter_manager.audio_emitters[object_id].continuity_manager;
         int playIndex;
         if(soundContinuity.storedIndex.ContainsKey(action))
         {
@@ -175,7 +184,7 @@ public class AudioPlaybackManager
     // Updates the continuity of audio list
     public void UpdateContinuity(int object_id, string action, int newIndex)
     {
-        var soundContinuity = EnumGameObject.game_objects[object_id].continuity_manager;
+        var soundContinuity = SoundApi.audio_emitter_manager.audio_emitters[object_id].continuity_manager;
         soundContinuity.storedIndex[action] = newIndex;
     }
 }

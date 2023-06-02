@@ -5,10 +5,16 @@ using System;
 namespace AudioSystem;
 public class AudioListManager
 {
+    // Returns integer ID from string ID
+    public int StringToId(string list_name)
+    {
+        return SoundApi.audio_container.string_id[list_name];
+    }
+
     // Returns the given list length minus one to ensure no bad index error
     public int GetListLength(string list_name)
     {
-        return SoundApi.audio_list.all_audio_lists[list_name].Count-1;
+        return SoundApi.audio_list.all_audio_lists[StringToId(list_name)].Count;
     }
 
     // Returns audio asset from ID
@@ -23,7 +29,7 @@ public class AudioListManager
         return SoundApi.audio_list.all_audio[Id].file_path;
     }
 
-    // Returns audio name from ID
+    // Returns sound name from integer ID
     public int SoundNameToId(string name)
     {            
         foreach (AudioAsset audio_asset in SoundApi.audio_list.all_audio)
