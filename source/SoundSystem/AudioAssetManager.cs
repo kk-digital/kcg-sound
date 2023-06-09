@@ -3,6 +3,10 @@ using Godot;
 //using Player;
 using System;
 
+/*
+This script manages all loading & registering
+*/
+
 namespace AudioSystem;
 public class AudioAssetManager
 {
@@ -12,14 +16,15 @@ public class AudioAssetManager
         GD.Print("audio_asset_manager : Registering sounds");
         InitializeAudioDirectory("res://assets/test_audio_assets");
 
+        /*
         List<int> test_list = new List<int>();
         test_list.Add(RegisterSoundAsset("res://assets/test_audio_assets/CoreMechStart.ogg", "CoreMech", "core_mech.png"));
         test_list.Add(RegisterSoundAsset("res://assets/test_audio_assets/CoreShotStart.ogg", "CoreShock", "core_shock.png"));
         test_list.Add(RegisterSoundAsset("res://assets/test_audio_assets/CoreBass.ogg", "CoreBass", "core_bass.png"));
-        RegisterSoundAssetList("Test", test_list);
+        RegisterSoundAssetList(0, test_list, "Test");
+        */
 
         GD.Print("audio_asset_manager : Registered sounds succesfully");
-
         LoadAllSoundAssets();
     }
 
@@ -41,7 +46,15 @@ public class AudioAssetManager
             if (dir.CurrentIsDir())
             {
                 string directory_path = path + "/" + file_name;
-                List<int> sound_ids = new List<int>();
+                List<int> sound_ids = new List<int>();  // List of sounds in directory
+
+                int list_id = SoundApi.audio_list.all_audio_lists.Count; // ID of new list
+                int agent_type    = ApplyAgentType(file_name);           // Apply ID of agent type
+                int material_type = ApplyMaterial(file_name);            // Apply ID of material
+                string stick_id = string.Format("{0}{1}{2}", list_id, agent_type, material_type); // Join them together into hash
+                list_id = Int32.Parse(stick_id); 
+                GD.Print("NEW ID : " + list_id);
+
                 foreach(var file in DirAccess.GetFilesAt(directory_path))
                 {
                     if(file.GetExtension() == "ogg")
@@ -51,9 +64,52 @@ public class AudioAssetManager
                     sound_ids.Add(RegisterSoundAsset(asset_path, asset_name, "X"));
                     }
                 }
-                RegisterSoundAssetList(file_name, sound_ids);
+                RegisterSoundAssetList(list_id, sound_ids, file_name);
             }
             file_name = dir.GetNext();
+        }
+    }
+
+    public int ApplyMaterial(string file_name)
+    {
+        if(file_name.Contains("Rock"))
+        {
+            GD.Print("File contain rock specification");
+            return 1;
+        }
+        else if(file_name.Contains("Concrete"))
+        {
+            return 2;
+        }
+        else if(file_name.Contains("Dirt"))
+        {
+            return 3;
+        }
+        else
+        {
+            GD.Print("File didn't contain material specification");
+            return 0;
+        }
+    }
+
+    public int ApplyAgentType(string file_name)
+    {
+        if(file_name.Contains("Human"))
+        {
+            return 1;
+        }
+        else if(file_name.Contains("Monster"))
+        {
+            return 2;
+        }
+        else if(file_name.Contains("Droid"))
+        {
+            return 3;
+        }
+        else
+        {
+            GD.Print("File didn't contain agent specification");
+            return 0;
         }
     }
 
@@ -70,7 +126,7 @@ public class AudioAssetManager
     }
 
     // Regsiters the sound and assigns an ID to later access it in all_audio list
-    public int RegisterSoundAsset(string path, string name, string icon_path)
+    public int  RegisterSoundAsset(string path, string name, string icon_path)
     {
         AudioAsset asset     = new AudioAsset();
         asset.file_path      = path;
@@ -84,18 +140,13 @@ public class AudioAssetManager
     }
 
     // Packs sound IDs into a list to later access it in all_audio_lists with a string
-    public void RegisterSoundAssetList(string list_name, List<int> asset_ids)
+    public void RegisterSoundAssetList(int list_id, List<int> asset_ids, string list_name)
     {
         List<AudioAsset> new_sound_list = new List<AudioAsset>();
         for (int asset_id = 0; asset_id <= (asset_ids.Count - 1); asset_id++)
-        {
-            new_sound_list.Add(SoundApi.audio_list.all_audio[asset_id]);
-        }
-
-        int list_id = SoundApi.audio_list.all_audio_lists.Count;          // Define list's integer ID
-        SoundApi.audio_container.string_id.Add(list_name, list_id);         // Asign string ID to list's integer ID for easy access
-        SoundApi.audio_list.all_audio_lists.Add(new_sound_list);            // Save sound asset list as integer ID
-        GD.Print("audio_asset_manager : New audio_list created (" + list_name + ") of " + new_sound_list.Count + " size");
+        { new_sound_list.Add(SoundApi.audio_list.all_audio[asset_id]); }    // Add all assets on asset_ids to new_sound_list
+        SoundApi.audio_list.all_audio_lists.Add(new_sound_list);            // Store new_sound_list with an integer ID
+        GD.Print("audio_asset_manager : New audio_list created " + list_name + " | ID " + list_id);
     }
 
     // Loads all sounds asset for them to be playable
@@ -120,16 +171,5 @@ public class AudioAssetManager
         SoundApi.audio_list.all_audio[asset_id].stream   = audio_stream_test;
         SoundApi.audio_list.all_audio[asset_id].is_loaded = true;
     }
-
-    /*
-    public void CheckAudioList()
-    {
-        GD.Print("All Audio : ");
-        foreach(AudioAsset i in SoundApi.audio_list.all_audio)
-        {
-            GD.Print(i + " / Total capactiy" + SoundApi.audio_list.all_audio.Count);
-        }
-    }
-    */
 }
 

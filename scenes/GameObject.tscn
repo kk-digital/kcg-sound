@@ -1,7 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://bf0mlfnf70jet"]
+[gd_scene load_steps=7 format=3 uid="uid://bf0mlfnf70jet"]
 
 [ext_resource type="Script" path="res://scenes/GameObject.cs" id="1_ej4jn"]
 [ext_resource type="Texture2D" uid="uid://bexewda7bomjs" path="res://assets/placeholdersprite.png" id="2_aoimp"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_dgjg2"]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_l7pw4"]
+
+[sub_resource type="Animation" id="Animation_kqysq"]
+resource_name = "new_animation"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_Ready"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6db2d"]
+_data = {
+"new_animation": SubResource("Animation_kqysq")
+}
 
 [node name="GameObject" type="Node2D"]
 position = Vector2(714, 411)
@@ -12,3 +38,13 @@ script = ExtResource("1_ej4jn")
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(-3, 0)
 texture = ExtResource("2_aoimp")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_dgjg2")
+anim_player = NodePath("../AnimationPlayer")
+parameters/playback = SubResource("AnimationNodeStateMachinePlayback_l7pw4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6db2d")
+}
