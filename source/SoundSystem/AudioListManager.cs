@@ -12,8 +12,9 @@ public class AudioListManager
     }
 
     // Returns the given list length minus one to ensure no bad index error
-    public int GetListLength(int list_id)
+    public int GetListLength(string list_id)
     {
+        //return SoundApi.audio_list.all_audio_lists[list_id].Count;
         return SoundApi.audio_list.all_audio_lists[list_id].Count;
     }
 

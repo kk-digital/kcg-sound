@@ -7,7 +7,8 @@ public class AudioList
 	public List<AudioAsset> all_audio = new List<AudioAsset>();
 
 	// Contains lists of sounds. Is also contained in all audio.
-	public List<List<AudioAsset>> all_audio_lists = new List<List<AudioAsset>>(); // Integer ID -> Asset
+	//public List<List<AudioAsset>> all_audio_lists = new List<List<AudioAsset>>(); // Integer ID -> Asset
+	public Dictionary<string, List<AudioAsset>> all_audio_lists = new Dictionary<string, List<AudioAsset>>(); // Integer ID -> Asset
 
 	//public AudioEffect aB = AudioServer.GetBusEffect(AudioServer.GetBusIndex("Name"), 0); // For future Sound Systems
 }

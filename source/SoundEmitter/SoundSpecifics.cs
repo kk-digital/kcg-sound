@@ -11,5 +11,5 @@ public class SoundSpecifics
     public float    distance_to_ground;
 
     // Store local reference of the last audio played on a certain audio sequence. Store reference as a list.
-    public Dictionary<int, int> continuity_manager = new Dictionary<int, int>();
+    public Dictionary<string, int> continuity_manager = new Dictionary<string, int>();
 }

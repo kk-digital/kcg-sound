@@ -10,11 +10,6 @@ public partial class mainScene : Node2D // Needs to be partial or godot doesn't 
 		GameState.InitGameState();
 	}
 
-	public override void _Process(double delta)
-	{
-		//MainLoopUpdate();
-	}
-
 	public void MainLoopUpdate()
 	{ 
 	}

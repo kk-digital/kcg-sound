@@ -24,9 +24,14 @@ public class SoundManager
         AudioEmitterMovement.Walk(sound_specifics);
     }
 
-    public void Shoot_SMG()
+    public static void Shoot_SMG()
     {
 
+    }
+
+    public static void Explosion(SoundSpecifics sound_specifics)
+    {
+        
     }
 
 }
