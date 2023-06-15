@@ -32,6 +32,7 @@ shape = SubResource("RectangleShape2D_0yyq3")
 position = Vector2(260, 204)
 max_contacts_reported = 2
 contact_monitor = true
+sleeping = true
 can_sleep = false
 script = ExtResource("3_7woac")
 

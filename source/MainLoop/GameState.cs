@@ -1,6 +1,6 @@
-using Godot;
+using SoundApi;
 
-namespace AudioSystem;
+//namespace AudioSystem;
 public static class GameState
 {
     public static bool IsInitialized { get; private set; }
@@ -9,9 +9,9 @@ public static class GameState
     {
         // (Fela)
         // Initialize sound | Create lists from subfolders and register & load all the sounds
-        SoundApi.audio_asset_manager.Init();
+        Audio.audio_asset_manager.Init();
 
         // Initialize sound emitters once sounds are loaded
-        SoundApi.audio_emitter_manager.Init();
+        Audio.audio_emitter_manager.Init();
     }
 }

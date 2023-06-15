@@ -1,7 +1,9 @@
 using AudioEvent;
+using AudioEmitter;
+using AudioSystem;
 
-namespace AudioSystem;
-public static class SoundApi // SEE README
+namespace SoundApi;
+public static class Audio // SEE README
 {
     public static AudioList             audio_list             = new AudioList();
     public static AudioListManager      audio_list_manager     = new AudioListManager();
@@ -10,6 +12,8 @@ public static class SoundApi // SEE README
     public static AudioEventTools       audio_event_tools      = new AudioEventTools();
     public static AudioContainer        audio_container        = new AudioContainer();
     public static AudioEmitterManager   audio_emitter_manager  = new AudioEmitterManager();
+
+    public static AudioEmitterWeapons   weapons  = new AudioEmitterWeapons();
 
     public static void Init()
     {
