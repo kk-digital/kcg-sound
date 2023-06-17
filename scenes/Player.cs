@@ -29,21 +29,27 @@ public partial class Player : Node2D, IGameObject
 	
 		if (Input.IsActionJustPressed("ui_down"))
 		{
+			GD.Print("audio_playback_manager : Playing audio | ID : 0 | CoreMechStart");
+			Audio.audio_event_tools.CancelReverb();
 			Audio.weapons.EmptyClip(agent_id);
 			//move_vector.Y = (float)move_amount;
 		}
 		if (Input.IsActionJustPressed("ui_up"))
 		{
+			Audio.audio_event_tools.ApplyReverb();
 			Audio.weapons.ReloadPistol(agent_id);
 			//move_vector.Y = (float)-move_amount;
 		}
 		if (Input.IsActionJustPressed("ui_right"))
 		{
+			Audio.audio_event_tools.CancelReverb();
 			Audio.weapons.ShootPistol(agent_id);
 			//move_vector.X = (float)move_amount;
 		}
 		if (Input.IsActionJustPressed("ui_left"))
 		{
+			GD.Print("audio_playback_manager : Playing audio | ID : 11 | Alltogether");
+			Audio.audio_event_tools.CancelReverb();
 			Audio.weapons.HitTerrain(agent_id);
 			//move_vector.X = (float)-move_amount;
 		}

@@ -13,11 +13,9 @@ public static class AudioEmitterMovement
 
     public static void  Walk(SoundSpecifics sound_specifics)
     {
-        GD.Print("audio_emitter : -> 'Walk'");
-
         // Overall sound ID
-        string sound_id = "03";                               // WALK ACTION ID = 03
-        sound_id += sound_specifics.agent_type;         // PLUS AGENT TYPE, HUMAN ID = 00
+        string sound_id = "03";                         // Walk Action ID = 03
+        sound_id += sound_specifics.agent_type;         // TODO: Plus AGENT TYPE, HUMAN ID = 00
         sound_id += sound_specifics.colliding_material; // PLUS MATERIAL TYPE, CONCRETE ID = 00
         // Example ID = 400
 
@@ -26,19 +24,16 @@ public static class AudioEmitterMovement
 
     public static void  Idle(SoundSpecifics sound_specifics)
     {
-        GD.Print("audio_emitter : -> 'Idle'");
         Audio.audio_playback_manager.PlayAudioInSequence("010000", sound_specifics.agent_id);
     }
 
     public static void  Jump(SoundSpecifics sound_specifics)
     {
-        GD.Print("audio_emitter : -> 'Jump'");
         Audio.audio_playback_manager.PlayAudioInSequence("020000", sound_specifics.agent_id);
     }
 
     public static void  DoubleJump(SoundSpecifics sound_specifics)
     {
-        GD.Print("audio_emitter : -> 'DoubleJump'");
         Audio.audio_playback_manager.PlayAudioInSequence("030000", sound_specifics.agent_id);
     }
 

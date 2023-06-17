@@ -53,6 +53,7 @@ public partial class Granade : RigidBody2D, IGameObject
     public void Explote()
     {
         GD.Print("granade : Explodes");
+        this.QueueFree();
         Audio.weapons.GranadeExplosion(agent_id);
     }
 }

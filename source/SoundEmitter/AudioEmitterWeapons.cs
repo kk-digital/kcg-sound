@@ -25,17 +25,18 @@ public class AudioEmitterWeapons
 
     public void EmptyClip(int agent_id)
     {
-        Audio.audio_playback_manager.PlayAudioInSequence("000000", agent_id);
+        Audio.audio_playback_manager.PlayAudio(0, agent_id);
     }
 
     public void ReloadPistol(int agent_id)
     {
-        Audio.audio_playback_manager.PlayAudioInSequence("010000", agent_id);
+        Audio.audio_playback_manager.PlaySequenceInPitch(1, "010000", agent_id);
     }
 
     public void ShootPistol(int agent_id)
     {
-        Audio.audio_playback_manager.PlayAudioInSequence("020000", agent_id);
+        Audio.audio_playback_manager.PlaySequenceInPitch(1, "020000", agent_id);
+        //Audio.audio_playback_manager.PlayAudioInSequence("020000", agent_id);
     }
     public void ClipIn(int agent_id)
     {
@@ -47,7 +48,8 @@ public class AudioEmitterWeapons
     }
     public void HitTerrain(int agent_id)
     {
-        Audio.audio_playback_manager.PlayAudioInSequence("050000", agent_id);
+        
+        Audio.audio_playback_manager.PlayAudio(11, agent_id);
     }
     public void HitAgent(int agent_id)
     {

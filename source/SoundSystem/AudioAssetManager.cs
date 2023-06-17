@@ -14,6 +14,7 @@ public class AudioAssetManager
     public void Init()
     {
         GD.Print("audio_asset_manager : Registering sounds");
+        GD.Print("audio_asset_manager : List Count : " + Audio.audio_list.all_audio.Count);
         InitializeAudioDirectory("res://assets/test_audio_assets");
 
         // Manually creating a list
@@ -103,7 +104,7 @@ public class AudioAssetManager
         //asset.icon         = ResourceLoader.Load(icon_path) as Texture; // Works, enable when textures are ready
         asset.is_loaded      = false;
         AddAudioAsset(asset);
-        asset.sound_id       = Audio.audio_list.all_audio.Count; // For the index to start at 0
+        asset.sound_id       = Audio.audio_list.all_audio.Count-1; // For the index to start at 0
         GD.Print("audio_asset_manager : Registered : " + name + " | ID : " + asset.sound_id + " | Filepath : " + path);
         return asset.sound_id;
     }
@@ -111,11 +112,11 @@ public class AudioAssetManager
     // Packs sound IDs into a list to later access it in all_audio_lists with a string
     public void RegisterSoundAssetList(string list_id, List<int> asset_ids, string list_name)
     {
-        List<AudioAsset> new_sound_list = new List<AudioAsset>();
-        for (int current_id = 0; current_id <= (asset_ids.Count-1); current_id++)
-        { new_sound_list.Add(Audio.audio_list.all_audio[(asset_ids[current_id])-1]); }  // Add all assets on asset_ids to new_sound_list (about the "-1", idk what is it but without it everything breaks)
+        //List<AudioAsset> new_sound_list = new List<AudioAsset>();
+        //for (int current_id = 0; current_id <= (asset_ids.Count-1); current_id++)
+        //{ new_sound_list.Add(Audio.audio_list.all_audio[(asset_ids[current_id])-1]); }  // Add all assets on asset_ids to new_sound_list (about the "-1", idk what is it but without it everything breaks)
         //Audio.audio_list.all_audio_lists.Add(new_sound_list);                         // Store new_sound_list with an integer ID
-        Audio.audio_list.all_audio_lists.Add(list_id, new_sound_list);                  // Store new_sound_list with an integer ID
+        Audio.audio_list.all_audio_lists.Add(list_id, asset_ids);                  // Store new_sound_list with an integer ID
         GD.Print("audio_asset_manager : New audio_list created for " + list_name + " | ID " + list_id);
     }
 
@@ -159,14 +160,21 @@ public class AudioAssetManager
     {
         GD.Print("- - - - - - - - -");
         GD.Print("audio_asset_manager : DEBUG | Printing all lists");
-        foreach(string list in Audio.audio_list.all_audio_lists.Keys)
+
+        foreach(string list in Audio.audio_list.all_audio_lists.Keys) // Keys = List ID (example: 010000)
         {
             GD.Print("audio_asset_manager : List : " + list);
-            foreach (var item in Audio.audio_list.all_audio_lists[list])
+            //for(int sound = 0; sound < Audio.audio_list.all_audio_lists[list].Count; sound++)
+            foreach (int sound in Audio.audio_list.all_audio_lists[list])
             {
-                GD.Print("audio_asset_manager : Contains : " + item.file_name);
+                GD.Print("audio_asset_manager : Sound Number : " + sound);
+                GD.Print("audio_asset_manager : Contains ID " + Audio.audio_list.all_audio[sound].sound_id + " : " + Audio.audio_list.all_audio[sound].file_name);
             }
-
+        }
+        GD.Print("audio_asset_manager : All Audio : ");
+        for(int id = 0; id < Audio.audio_list.all_audio.Count; id++)
+        {
+            GD.Print("audio_asset_manager : ID" + Audio.audio_list.all_audio[id].sound_id + " : Audio : " + Audio.audio_list.all_audio[id].file_name);
         }
         GD.Print("- - - - - - - - -");
     }

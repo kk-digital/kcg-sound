@@ -7,7 +7,7 @@ public class AudioEmitterManager
     public List<GameObject> audio_data = new List<GameObject>(); 
     public List<Node> audio_emitters = new List<Node>(); 
 
-    // Register a sound emitter
+    // Register a sound emitter/agent
     public int AddGameObject(GameObject data, Node emitter)
     {
         audio_data.Add(data);           // Has information like materials, agent ID, sound continuity, etc.
