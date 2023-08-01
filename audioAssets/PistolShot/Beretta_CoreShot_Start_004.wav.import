@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b8jsa772ldr80"
-path="res://.godot/imported/Beretta_CoreShot_Start_004.wav-0ca6db3d3ecb1686637441d66877170f.sample"
+path="res://.godot/imported/Beretta_CoreShot_Start_004.wav-31f795503a90e58f91193d1594932e01.sample"
 
 [deps]
 
-source_file="res://assets/audioAssets/2PistolShoot/Beretta_CoreShot_Start_004.wav"
-dest_files=["res://.godot/imported/Beretta_CoreShot_Start_004.wav-0ca6db3d3ecb1686637441d66877170f.sample"]
+source_file="res://kcg-sound/audioAssets/PistolShot/Beretta_CoreShot_Start_004.wav"
+dest_files=["res://.godot/imported/Beretta_CoreShot_Start_004.wav-31f795503a90e58f91193d1594932e01.sample"]
 
 [params]
 
