@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://gepm4kmtbswe"
-path="res://.godot/imported/grass_jump_a2.wav-b44819b1881727b88f5631823e4c6cbc.sample"
+path="res://.godot/imported/grass_jump_a2.wav-f0d5f0ea3054043d6db6173d81b9dec6.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Jump/grass_jump_a2.wav"
-dest_files=["res://.godot/imported/grass_jump_a2.wav-b44819b1881727b88f5631823e4c6cbc.sample"]
+source_file="res://kcg-sound/audioAssets/Deprecated/Jump/grass_jump_a2.wav"
+dest_files=["res://.godot/imported/grass_jump_a2.wav-f0d5f0ea3054043d6db6173d81b9dec6.sample"]
 
 [params]
 

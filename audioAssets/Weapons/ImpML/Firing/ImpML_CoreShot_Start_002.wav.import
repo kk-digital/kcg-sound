@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://od3j4tbrtxdw"
-path="res://.godot/imported/ImpML_CoreShot_002.wav-3f27f677f877535487e65bce1f2d3a2c.sample"
+path="res://.godot/imported/ImpML_CoreShot_Start_002.wav-8b8af0f9902c661e7bbf27eb52b8d1f8.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/ImperialRPG/Shot/ImpML_CoreShot_002.wav"
-dest_files=["res://.godot/imported/ImpML_CoreShot_002.wav-3f27f677f877535487e65bce1f2d3a2c.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/ImpML/Firing/ImpML_CoreShot_Start_002.wav"
+dest_files=["res://.godot/imported/ImpML_CoreShot_Start_002.wav-8b8af0f9902c661e7bbf27eb52b8d1f8.sample"]
 
 [params]
 

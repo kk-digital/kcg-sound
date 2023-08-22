@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bjysbg3ajj6g6"
-path="res://.godot/imported/Beretta_Reload_MagIn_002.wav-a14cf14a7092da40c874473ac897351d.sample"
+path="res://.godot/imported/TestPistol_Reload_MagIn_002.wav-96d22afe97f6e2167b2d00ddb5aa180d.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Beretta/Reload/Beretta_Reload_MagIn_002.wav"
-dest_files=["res://.godot/imported/Beretta_Reload_MagIn_002.wav-a14cf14a7092da40c874473ac897351d.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/TestPistol/Reload/TestPistol_Reload_MagIn_002.wav"
+dest_files=["res://.godot/imported/TestPistol_Reload_MagIn_002.wav-96d22afe97f6e2167b2d00ddb5aa180d.sample"]
 
 [params]
 
