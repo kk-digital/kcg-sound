@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://doh8wfu67iiq1"
-path="res://.godot/imported/ImpML_Dryfire_003.wav-8bd10a9b599917a2f6288c25718013ba.sample"
+path="res://.godot/imported/ImpML_Dryfire_003.wav-95a35e875d10e8c180573943b1d1ed92.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/ImperialRPG/Dryfire/ImpML_Dryfire_003.wav"
-dest_files=["res://.godot/imported/ImpML_Dryfire_003.wav-8bd10a9b599917a2f6288c25718013ba.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/ImpML/Firing/ImpML_Dryfire_003.wav"
+dest_files=["res://.godot/imported/ImpML_Dryfire_003.wav-95a35e875d10e8c180573943b1d1ed92.sample"]
 
 [params]
 

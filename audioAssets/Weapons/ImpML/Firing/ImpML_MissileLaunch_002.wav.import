@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bq3nnghy36rnq"
-path="res://.godot/imported/ImpML_MissileLaunch_002.wav-b9eea9471cd6f8175776f10166debe70.sample"
+path="res://.godot/imported/ImpML_MissileLaunch_002.wav-d2f98df98426ddb0d58cf64db7dc6cbc.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Missile/Launch/ImpML_MissileLaunch_002.wav"
-dest_files=["res://.godot/imported/ImpML_MissileLaunch_002.wav-b9eea9471cd6f8175776f10166debe70.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/ImpML/Firing/ImpML_MissileLaunch_002.wav"
+dest_files=["res://.godot/imported/ImpML_MissileLaunch_002.wav-d2f98df98426ddb0d58cf64db7dc6cbc.sample"]
 
 [params]
 

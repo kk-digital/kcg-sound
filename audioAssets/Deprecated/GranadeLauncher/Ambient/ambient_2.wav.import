@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://fumf30lup8nq"
-path="res://.godot/imported/ambient_2.wav-93b17e55cd000904e0ba1c179dae8cf9.sample"
+path="res://.godot/imported/ambient_2.wav-b77d38e5234d4981504400f4ce999922.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/GranadeLauncher/Ambient/ambient_2.wav"
-dest_files=["res://.godot/imported/ambient_2.wav-93b17e55cd000904e0ba1c179dae8cf9.sample"]
+source_file="res://kcg-sound/audioAssets/Deprecated/GranadeLauncher/Ambient/ambient_2.wav"
+dest_files=["res://.godot/imported/ambient_2.wav-b77d38e5234d4981504400f4ce999922.sample"]
 
 [params]
 
