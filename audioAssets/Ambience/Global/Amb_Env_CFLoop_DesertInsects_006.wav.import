@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cjofnyfs5a5b7"
-path="res://.godot/imported/Amb_Env_CFLoop_DesertInsects_006.wav-8f300789fd36463b622c61d562fd0cbe.sample"
+path="res://.godot/imported/Amb_Env_CFLoop_DesertInsects_006.wav-7955c00c99213455db7802cf47d12162.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Ambience/Global/Amb_Env_CFLoop_DesertInsects_006.wav"
-dest_files=["res://.godot/imported/Amb_Env_CFLoop_DesertInsects_006.wav-8f300789fd36463b622c61d562fd0cbe.sample"]
+source_file="res://engine-sound/audioAssets/Ambience/Global/Amb_Env_CFLoop_DesertInsects_006.wav"
+dest_files=["res://.godot/imported/Amb_Env_CFLoop_DesertInsects_006.wav-7955c00c99213455db7802cf47d12162.sample"]
 
 [params]
 

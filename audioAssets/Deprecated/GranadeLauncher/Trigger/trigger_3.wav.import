@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bvfts2n5sceas"
-path="res://.godot/imported/trigger_3.wav-f858bfd131e74493f3e4dda328399bad.sample"
+path="res://.godot/imported/trigger_3.wav-9cea73e56daeb0f8aa861c06cedbd214.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/GranadeLauncher/Trigger/trigger_3.wav"
-dest_files=["res://.godot/imported/trigger_3.wav-f858bfd131e74493f3e4dda328399bad.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/GranadeLauncher/Trigger/trigger_3.wav"
+dest_files=["res://.godot/imported/trigger_3.wav-9cea73e56daeb0f8aa861c06cedbd214.sample"]
 
 [params]
 

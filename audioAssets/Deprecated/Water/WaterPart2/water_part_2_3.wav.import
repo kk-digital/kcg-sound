@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://3sxwfgcuq11"
-path="res://.godot/imported/water_part_2_3.wav-6348e73cbcf7563a6ff8634ad45dc673.sample"
+path="res://.godot/imported/water_part_2_3.wav-03575db98035f1ca34a92ec1fb0f62b6.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/Water/WaterPart2/water_part_2_3.wav"
-dest_files=["res://.godot/imported/water_part_2_3.wav-6348e73cbcf7563a6ff8634ad45dc673.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/Water/WaterPart2/water_part_2_3.wav"
+dest_files=["res://.godot/imported/water_part_2_3.wav-03575db98035f1ca34a92ec1fb0f62b6.sample"]
 
 [params]
 

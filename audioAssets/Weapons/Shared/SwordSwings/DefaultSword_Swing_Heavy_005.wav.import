@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ddgl8m1dq2kot"
-path="res://.godot/imported/DefaultSword_Swing_Heavy_005.wav-4c7712a03f5a7e401ca69a9f79b45a57.sample"
+path="res://.godot/imported/DefaultSword_Swing_Heavy_005.wav-bd49d0a8284ad7afc92380f2293e03ed.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/Shared/SwordSwings/DefaultSword_Swing_Heavy_005.wav"
-dest_files=["res://.godot/imported/DefaultSword_Swing_Heavy_005.wav-4c7712a03f5a7e401ca69a9f79b45a57.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/Shared/SwordSwings/DefaultSword_Swing_Heavy_005.wav"
+dest_files=["res://.godot/imported/DefaultSword_Swing_Heavy_005.wav-bd49d0a8284ad7afc92380f2293e03ed.sample"]
 
 [params]
 

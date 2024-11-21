@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cn6ddv324cr7k"
-path="res://.godot/imported/metal_jump_a2.wav-9627bc0fdfde78b4e159bb521febacd5.sample"
+path="res://.godot/imported/metal_jump_a2.wav-2949616c18a3dc53270512120a511f78.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/Jump/metal_jump_a2.wav"
-dest_files=["res://.godot/imported/metal_jump_a2.wav-9627bc0fdfde78b4e159bb521febacd5.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/Jump/metal_jump_a2.wav"
+dest_files=["res://.godot/imported/metal_jump_a2.wav-2949616c18a3dc53270512120a511f78.sample"]
 
 [params]
 

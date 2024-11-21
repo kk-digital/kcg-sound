@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://drxqmveldw8ka"
-path="res://.godot/imported/C2.wav-43c53b4a6734f0dcb1f14d02ee4d6c93.sample"
+path="res://.godot/imported/C2.wav-c537636d4088cee4b94411e86c71950c.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Morse/C2.wav"
-dest_files=["res://.godot/imported/C2.wav-43c53b4a6734f0dcb1f14d02ee4d6c93.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Morse/C2.wav"
+dest_files=["res://.godot/imported/C2.wav-c537636d4088cee4b94411e86c71950c.sample"]
 
 [params]
 

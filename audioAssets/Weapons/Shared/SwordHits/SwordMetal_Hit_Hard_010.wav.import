@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b53wyj8i0geq4"
-path="res://.godot/imported/SwordMetal_Hit_Hard_010.wav-e14bb6227c7da94257aadfd8f55ed5a1.sample"
+path="res://.godot/imported/SwordMetal_Hit_Hard_010.wav-99347041a1665030cf46a5e3eabe2d5b.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/Shared/SwordHits/SwordMetal_Hit_Hard_010.wav"
-dest_files=["res://.godot/imported/SwordMetal_Hit_Hard_010.wav-e14bb6227c7da94257aadfd8f55ed5a1.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/Shared/SwordHits/SwordMetal_Hit_Hard_010.wav"
+dest_files=["res://.godot/imported/SwordMetal_Hit_Hard_010.wav-99347041a1665030cf46a5e3eabe2d5b.sample"]
 
 [params]
 

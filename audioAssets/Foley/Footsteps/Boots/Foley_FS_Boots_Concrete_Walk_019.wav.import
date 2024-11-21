@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ciilupjmomtcr"
-path="res://.godot/imported/Foley_FS_Boots_Concrete_Walk_019.wav-f9ddbc1fe90d66e162b641491b28f429.sample"
+path="res://.godot/imported/Foley_FS_Boots_Concrete_Walk_019.wav-7e21d5ec4f219b1cc34a4e13b252e4d7.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_Concrete_Walk_019.wav"
-dest_files=["res://.godot/imported/Foley_FS_Boots_Concrete_Walk_019.wav-f9ddbc1fe90d66e162b641491b28f429.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_Concrete_Walk_019.wav"
+dest_files=["res://.godot/imported/Foley_FS_Boots_Concrete_Walk_019.wav-7e21d5ec4f219b1cc34a4e13b252e4d7.sample"]
 
 [params]
 

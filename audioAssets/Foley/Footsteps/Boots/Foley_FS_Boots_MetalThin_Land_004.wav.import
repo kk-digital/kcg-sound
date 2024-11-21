@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bg3yw6e5qne8v"
-path="res://.godot/imported/Foley_FS_Boots_MetalThin_Land_004.wav-a3388972671f489d69e9f5471f6805bd.sample"
+path="res://.godot/imported/Foley_FS_Boots_MetalThin_Land_004.wav-2811716af6f4e4231da489cb2a82fc34.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_MetalThin_Land_004.wav"
-dest_files=["res://.godot/imported/Foley_FS_Boots_MetalThin_Land_004.wav-a3388972671f489d69e9f5471f6805bd.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_MetalThin_Land_004.wav"
+dest_files=["res://.godot/imported/Foley_FS_Boots_MetalThin_Land_004.wav-2811716af6f4e4231da489cb2a82fc34.sample"]
 
 [params]
 

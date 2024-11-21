@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dtqr8cdcu61po"
-path="res://.godot/imported/MGL_Reload_AllShellsOut_003.wav-3bc287de3add1a0b278b25bde305edb0.sample"
+path="res://.godot/imported/MGL_Reload_AllShellsOut_003.wav-7485699463b1ddbfdab5126f104d7ec9.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/MGL/Reload/MGL_Reload_AllShellsOut_003.wav"
-dest_files=["res://.godot/imported/MGL_Reload_AllShellsOut_003.wav-3bc287de3add1a0b278b25bde305edb0.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/MGL/Reload/MGL_Reload_AllShellsOut_003.wav"
+dest_files=["res://.godot/imported/MGL_Reload_AllShellsOut_003.wav-7485699463b1ddbfdab5126f104d7ec9.sample"]
 
 [params]
 

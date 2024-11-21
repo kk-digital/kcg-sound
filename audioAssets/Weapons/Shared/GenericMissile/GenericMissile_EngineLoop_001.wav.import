@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://hxopvekbx5wu"
-path="res://.godot/imported/GenericMissile_EngineLoop_001.wav-5c40e7de700eda41f62476b282bcf7b8.sample"
+path="res://.godot/imported/GenericMissile_EngineLoop_001.wav-eb45d283401e31508af2e46aa49579a7.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/Shared/GenericMissile/GenericMissile_EngineLoop_001.wav"
-dest_files=["res://.godot/imported/GenericMissile_EngineLoop_001.wav-5c40e7de700eda41f62476b282bcf7b8.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/Shared/GenericMissile/GenericMissile_EngineLoop_001.wav"
+dest_files=["res://.godot/imported/GenericMissile_EngineLoop_001.wav-eb45d283401e31508af2e46aa49579a7.sample"]
 
 [params]
 

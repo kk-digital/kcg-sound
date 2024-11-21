@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cvrw2uwbho8df"
-path="res://.godot/imported/shotgun_shot_2.wav-26cc1a3239928779ba108feef09947e5.sample"
+path="res://.godot/imported/shotgun_shot_2.wav-6e377699c9ebd17b0a2e546f0e67375f.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/Shotgun/Shot/Shot/shotgun_shot_2.wav"
-dest_files=["res://.godot/imported/shotgun_shot_2.wav-26cc1a3239928779ba108feef09947e5.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/Shotgun/Shot/Shot/shotgun_shot_2.wav"
+dest_files=["res://.godot/imported/shotgun_shot_2.wav-6e377699c9ebd17b0a2e546f0e67375f.sample"]
 
 [params]
 

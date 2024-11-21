@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bgstxhdfmomu5"
-path="res://.godot/imported/Amb_OneShot_DesertAnimal_004.wav-da67e51d6f65f162ee767d96d92e2448.sample"
+path="res://.godot/imported/Amb_OneShot_DesertAnimal_004.wav-d16b7fe28eef7d2d0e57b5c7155a2374.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Ambience/Oneshots/Amb_OneShot_DesertAnimal_004.wav"
-dest_files=["res://.godot/imported/Amb_OneShot_DesertAnimal_004.wav-da67e51d6f65f162ee767d96d92e2448.sample"]
+source_file="res://engine-sound/audioAssets/Ambience/Oneshots/Amb_OneShot_DesertAnimal_004.wav"
+dest_files=["res://.godot/imported/Amb_OneShot_DesertAnimal_004.wav-d16b7fe28eef7d2d0e57b5c7155a2374.sample"]
 
 [params]
 

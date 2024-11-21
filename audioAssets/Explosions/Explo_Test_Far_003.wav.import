@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cetgq3ws3a3r1"
-path="res://.godot/imported/Explo_Test_Far_003.wav-60677366da64f745ba81809259953e70.sample"
+path="res://.godot/imported/Explo_Test_Far_003.wav-4802b8b2bf6c11fa67e2a9c2fcf04587.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Explosions/Explo_Test_Far_003.wav"
-dest_files=["res://.godot/imported/Explo_Test_Far_003.wav-60677366da64f745ba81809259953e70.sample"]
+source_file="res://engine-sound/audioAssets/Explosions/Explo_Test_Far_003.wav"
+dest_files=["res://.godot/imported/Explo_Test_Far_003.wav-4802b8b2bf6c11fa67e2a9c2fcf04587.sample"]
 
 [params]
 

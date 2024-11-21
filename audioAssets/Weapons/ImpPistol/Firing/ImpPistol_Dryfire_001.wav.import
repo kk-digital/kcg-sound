@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://7nyv2abl2vbf"
-path="res://.godot/imported/ImpPistol_Dryfire_001.wav-62990846aa47977917235f67246cd1aa.sample"
+path="res://.godot/imported/ImpPistol_Dryfire_001.wav-c9012cf17c233c9ea0af2e3c3b22bd99.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/ImpPistol/Firing/ImpPistol_Dryfire_001.wav"
-dest_files=["res://.godot/imported/ImpPistol_Dryfire_001.wav-62990846aa47977917235f67246cd1aa.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/ImpPistol/Firing/ImpPistol_Dryfire_001.wav"
+dest_files=["res://.godot/imported/ImpPistol_Dryfire_001.wav-c9012cf17c233c9ea0af2e3c3b22bd99.sample"]
 
 [params]
 

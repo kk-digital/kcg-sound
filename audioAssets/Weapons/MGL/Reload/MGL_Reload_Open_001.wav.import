@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bggtrkq0etaym"
-path="res://.godot/imported/MGL_Reload_Open_001.wav-03e7bfeeb1942fa3fdd34ea351fa2514.sample"
+path="res://.godot/imported/MGL_Reload_Open_001.wav-753589a75831595db143f5b2c7f77ecb.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/MGL/Reload/MGL_Reload_Open_001.wav"
-dest_files=["res://.godot/imported/MGL_Reload_Open_001.wav-03e7bfeeb1942fa3fdd34ea351fa2514.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/MGL/Reload/MGL_Reload_Open_001.wav"
+dest_files=["res://.godot/imported/MGL_Reload_Open_001.wav-753589a75831595db143f5b2c7f77ecb.sample"]
 
 [params]
 

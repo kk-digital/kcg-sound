@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://db7boqa1nmx7u"
-path="res://.godot/imported/EnergySword_Swing_Light_002.wav-f1ef0c94a1c34131b9586361f5e0695d.sample"
+path="res://.godot/imported/EnergySword_Swing_Light_002.wav-b2e9e88e47a8ae836fca206fe3544131.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/Shared/SwordSwings/EnergySword_Swing_Light_002.wav"
-dest_files=["res://.godot/imported/EnergySword_Swing_Light_002.wav-f1ef0c94a1c34131b9586361f5e0695d.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/Shared/SwordSwings/EnergySword_Swing_Light_002.wav"
+dest_files=["res://.godot/imported/EnergySword_Swing_Light_002.wav-b2e9e88e47a8ae836fca206fe3544131.sample"]
 
 [params]
 

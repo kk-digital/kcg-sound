@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b604te0no8qci"
-path="res://.godot/imported/Foley_FS_Boots_Grass_Walk_001.wav-03b37fc26e66429ff8c1c3fbed2113db.sample"
+path="res://.godot/imported/Foley_FS_Boots_Grass_Walk_001.wav-2492787fc696b8cb294f44319e216fa1.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_Grass_Walk_001.wav"
-dest_files=["res://.godot/imported/Foley_FS_Boots_Grass_Walk_001.wav-03b37fc26e66429ff8c1c3fbed2113db.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_Grass_Walk_001.wav"
+dest_files=["res://.godot/imported/Foley_FS_Boots_Grass_Walk_001.wav-2492787fc696b8cb294f44319e216fa1.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c0bhr575a346n"
-path="res://.godot/imported/MagMGL_Reload_MagIn_003.wav-a8b52aeb7fbc4a1e55181effd7390172.sample"
+path="res://.godot/imported/MagMGL_Reload_MagIn_003.wav-174d92dd6173744de58ed8150801777f.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/MagMGL/Reload/MagMGL_Reload_MagIn_003.wav"
-dest_files=["res://.godot/imported/MagMGL_Reload_MagIn_003.wav-a8b52aeb7fbc4a1e55181effd7390172.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/MagMGL/Reload/MagMGL_Reload_MagIn_003.wav"
+dest_files=["res://.godot/imported/MagMGL_Reload_MagIn_003.wav-174d92dd6173744de58ed8150801777f.sample"]
 
 [params]
 

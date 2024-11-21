@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c3t1pqqxl77nk"
-path="res://.godot/imported/Amb_Sp_CFLoop_DesertCalm_001.wav-523faecd6d1d7c83f8b3fd33cccba991.sample"
+path="res://.godot/imported/Amb_Sp_CFLoop_DesertCalm_001.wav-7c88da78bb3c292117b387b30d5da3a9.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Ambience/Global/Amb_Sp_CFLoop_DesertCalm_001.wav"
-dest_files=["res://.godot/imported/Amb_Sp_CFLoop_DesertCalm_001.wav-523faecd6d1d7c83f8b3fd33cccba991.sample"]
+source_file="res://engine-sound/audioAssets/Ambience/Global/Amb_Sp_CFLoop_DesertCalm_001.wav"
+dest_files=["res://.godot/imported/Amb_Sp_CFLoop_DesertCalm_001.wav-7c88da78bb3c292117b387b30d5da3a9.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ctspe3nb1f01s"
-path="res://.godot/imported/DefaultJetpack_Loop_001.wav-1e5f2fa3e2623e0f9e269fdb2a31a806.sample"
+path="res://.godot/imported/DefaultJetpack_Loop_001.wav-499098967fa5740d26986fbef6306e32.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Jetpack/DefaultJetpack_Loop_001.wav"
-dest_files=["res://.godot/imported/DefaultJetpack_Loop_001.wav-1e5f2fa3e2623e0f9e269fdb2a31a806.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Jetpack/DefaultJetpack_Loop_001.wav"
+dest_files=["res://.godot/imported/DefaultJetpack_Loop_001.wav-499098967fa5740d26986fbef6306e32.sample"]
 
 [params]
 

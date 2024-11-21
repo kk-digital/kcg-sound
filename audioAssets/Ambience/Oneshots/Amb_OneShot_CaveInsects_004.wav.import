@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dtq6at8dhbum"
-path="res://.godot/imported/Amb_OneShot_CaveInsects_004.wav-1b3c4f88ddb80af3e8e6932bc1d1cbe3.sample"
+path="res://.godot/imported/Amb_OneShot_CaveInsects_004.wav-b2e7ed0b1a25ea2e74998e8a3fd818f1.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Ambience/Oneshots/Amb_OneShot_CaveInsects_004.wav"
-dest_files=["res://.godot/imported/Amb_OneShot_CaveInsects_004.wav-1b3c4f88ddb80af3e8e6932bc1d1cbe3.sample"]
+source_file="res://engine-sound/audioAssets/Ambience/Oneshots/Amb_OneShot_CaveInsects_004.wav"
+dest_files=["res://.godot/imported/Amb_OneShot_CaveInsects_004.wav-b2e7ed0b1a25ea2e74998e8a3fd818f1.sample"]
 
 [params]
 

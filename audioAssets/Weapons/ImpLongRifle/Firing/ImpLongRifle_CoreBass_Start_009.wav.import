@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b23nykn88u7b1"
-path="res://.godot/imported/ImpLongRifle_CoreBass_Start_009.wav-0a27d850bb060b40090243ec7d8b3436.sample"
+path="res://.godot/imported/ImpLongRifle_CoreBass_Start_009.wav-8dfd523b765cdccad8916aa0e9b8e6a1.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/ImpLongRifle/Firing/ImpLongRifle_CoreBass_Start_009.wav"
-dest_files=["res://.godot/imported/ImpLongRifle_CoreBass_Start_009.wav-0a27d850bb060b40090243ec7d8b3436.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/ImpLongRifle/Firing/ImpLongRifle_CoreBass_Start_009.wav"
+dest_files=["res://.godot/imported/ImpLongRifle_CoreBass_Start_009.wav-8dfd523b765cdccad8916aa0e9b8e6a1.sample"]
 
 [params]
 
