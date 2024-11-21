@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cjgryiyh3tpd6"
-path="res://.godot/imported/ImpPistol_CoreBass_Start_002.wav-28ee64c0deea1c59433f0349405113bc.sample"
+path="res://.godot/imported/ImpPistol_CoreBass_Start_002.wav-bef24afaf6bd1ac20a18442e96885285.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/ImperialPistol/Shot/ImpPistol_CoreBass_Start_002.wav"
-dest_files=["res://.godot/imported/ImpPistol_CoreBass_Start_002.wav-28ee64c0deea1c59433f0349405113bc.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/ImpPistol/Firing/ImpPistol_CoreBass_Start_002.wav"
+dest_files=["res://.godot/imported/ImpPistol_CoreBass_Start_002.wav-bef24afaf6bd1ac20a18442e96885285.sample"]
 
 [params]
 

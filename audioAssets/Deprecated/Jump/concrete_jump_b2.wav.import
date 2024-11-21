@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://beog8dl6gm48d"
-path="res://.godot/imported/concrete_jump_b2.wav-33083a4e190d32a92d16978bf46ab5cc.sample"
+path="res://.godot/imported/concrete_jump_b2.wav-bb1b31b700849b6a0a06fcf5d904d02b.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Jump/concrete_jump_b2.wav"
-dest_files=["res://.godot/imported/concrete_jump_b2.wav-33083a4e190d32a92d16978bf46ab5cc.sample"]
+source_file="res://kcg-sound/audioAssets/Deprecated/Jump/concrete_jump_b2.wav"
+dest_files=["res://.godot/imported/concrete_jump_b2.wav-bb1b31b700849b6a0a06fcf5d904d02b.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dynh1ieyb3js3"
-path="res://.godot/imported/Beretta_Dryfire_002.wav-622ff87f3f758ca3fd77b55a6554e7ca.sample"
+path="res://.godot/imported/TestPistol_Dryfire_002.wav-a45559a151f8934999f37d45d7a0a5f4.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Beretta/Dryfire/Beretta_Dryfire_002.wav"
-dest_files=["res://.godot/imported/Beretta_Dryfire_002.wav-622ff87f3f758ca3fd77b55a6554e7ca.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/TestPistol/Firing/TestPistol_Dryfire_002.wav"
+dest_files=["res://.godot/imported/TestPistol_Dryfire_002.wav-a45559a151f8934999f37d45d7a0a5f4.sample"]
 
 [params]
 

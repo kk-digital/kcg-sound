@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bg4sepbtu4jx5"
-path="res://.godot/imported/Beretta_Reload_BoltBack_003.wav-d2bb66c241490713b2713904f7fd263b.sample"
+path="res://.godot/imported/TestPistol_Reload_BoltBack_003.wav-62880c6d9bbdc0fe095d661202746b15.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Beretta/Reload/Beretta_Reload_BoltBack_003.wav"
-dest_files=["res://.godot/imported/Beretta_Reload_BoltBack_003.wav-d2bb66c241490713b2713904f7fd263b.sample"]
+source_file="res://kcg-sound/audioAssets/Weapons/TestPistol/Reload/TestPistol_Reload_BoltBack_003.wav"
+dest_files=["res://.godot/imported/TestPistol_Reload_BoltBack_003.wav-62880c6d9bbdc0fe095d661202746b15.sample"]
 
 [params]
 

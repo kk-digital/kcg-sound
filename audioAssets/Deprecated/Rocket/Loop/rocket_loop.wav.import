@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://jjdsgbvob471"
-path="res://.godot/imported/rocket_loop.wav-77c28de631960fa71b148ede5ce640cd.sample"
+path="res://.godot/imported/rocket_loop.wav-5427a9f2380ff7f139a64cf4b113bc26.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Rocket/Loop/rocket_loop.wav"
-dest_files=["res://.godot/imported/rocket_loop.wav-77c28de631960fa71b148ede5ce640cd.sample"]
+source_file="res://kcg-sound/audioAssets/Deprecated/Rocket/Loop/rocket_loop.wav"
+dest_files=["res://.godot/imported/rocket_loop.wav-5427a9f2380ff7f139a64cf4b113bc26.sample"]
 
 [params]
 
