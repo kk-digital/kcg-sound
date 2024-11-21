@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bio0sf8ojagds"
-path="res://.godot/imported/ImpML_Reload_TubeIn_003.wav-fd46f624460ed0829e55a544cf570a61.sample"
+path="res://.godot/imported/ImpML_Reload_TubeIn_003.wav-e921eb797a04b99dae747a5b7746018a.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/ImpML/Reload/ImpML_Reload_TubeIn_003.wav"
-dest_files=["res://.godot/imported/ImpML_Reload_TubeIn_003.wav-fd46f624460ed0829e55a544cf570a61.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/ImpML/Reload/ImpML_Reload_TubeIn_003.wav"
+dest_files=["res://.godot/imported/ImpML_Reload_TubeIn_003.wav-e921eb797a04b99dae747a5b7746018a.sample"]
 
 [params]
 

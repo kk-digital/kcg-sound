@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c2jtr8whwriri"
-path="res://.godot/imported/Foley_FS_Boots_MetalThin_Run_020.wav-a69ddf95c45a82f76c492883fad1f204.sample"
+path="res://.godot/imported/Foley_FS_Boots_MetalThin_Run_020.wav-281533f6139d383579e07e2f8e8b3709.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_MetalThin_Run_020.wav"
-dest_files=["res://.godot/imported/Foley_FS_Boots_MetalThin_Run_020.wav-a69ddf95c45a82f76c492883fad1f204.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Footsteps/Boots/Foley_FS_Boots_MetalThin_Run_020.wav"
+dest_files=["res://.godot/imported/Foley_FS_Boots_MetalThin_Run_020.wav-281533f6139d383579e07e2f8e8b3709.sample"]
 
 [params]
 

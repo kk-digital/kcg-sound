@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b7fmuudl78wb5"
-path="res://.godot/imported/ImpPistol_Reload_BoltBack_001.wav-ea471028f8980a8cb97a829b4b3b1f5d.sample"
+path="res://.godot/imported/ImpPistol_Reload_BoltBack_001.wav-16590464fc68ab2d4867975a881ce6a9.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/ImpPistol/Reload/ImpPistol_Reload_BoltBack_001.wav"
-dest_files=["res://.godot/imported/ImpPistol_Reload_BoltBack_001.wav-ea471028f8980a8cb97a829b4b3b1f5d.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/ImpPistol/Reload/ImpPistol_Reload_BoltBack_001.wav"
+dest_files=["res://.godot/imported/ImpPistol_Reload_BoltBack_001.wav-16590464fc68ab2d4867975a881ce6a9.sample"]
 
 [params]
 

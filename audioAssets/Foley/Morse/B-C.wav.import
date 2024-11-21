@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://btesk6ii2qdp2"
-path="res://.godot/imported/B-C.wav-c69a3c7abf9e6066aa2e7d5a330eed7f.sample"
+path="res://.godot/imported/B-C.wav-e5f00f0bcbcd8976966d77556f629b6b.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Foley/Morse/B-C.wav"
-dest_files=["res://.godot/imported/B-C.wav-c69a3c7abf9e6066aa2e7d5a330eed7f.sample"]
+source_file="res://engine-sound/audioAssets/Foley/Morse/B-C.wav"
+dest_files=["res://.godot/imported/B-C.wav-e5f00f0bcbcd8976966d77556f629b6b.sample"]
 
 [params]
 

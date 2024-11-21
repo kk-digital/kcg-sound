@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cx5lpbv82m1fq"
-path="res://.godot/imported/burst_2.wav-ce2505f0d5653a603885ec6defc88bde.sample"
+path="res://.godot/imported/burst_2.wav-863e89768a03cbf33a1dbdc5afba0a99.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/GranadeLauncher/Burst/burst_2.wav"
-dest_files=["res://.godot/imported/burst_2.wav-ce2505f0d5653a603885ec6defc88bde.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/GranadeLauncher/Burst/burst_2.wav"
+dest_files=["res://.godot/imported/burst_2.wav-863e89768a03cbf33a1dbdc5afba0a99.sample"]
 
 [params]
 

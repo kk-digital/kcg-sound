@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://jqrmume15dix"
-path="res://.godot/imported/TestPistol_CoreShot_Start_005.wav-05bc1b30a678f5600fbcbccf8217280e.sample"
+path="res://.godot/imported/TestPistol_CoreShot_Start_005.wav-6f0e847b4f7bfc152f4564e55c6d5963.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/TestPistol/Firing/TestPistol_CoreShot_Start_005.wav"
-dest_files=["res://.godot/imported/TestPistol_CoreShot_Start_005.wav-05bc1b30a678f5600fbcbccf8217280e.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/TestPistol/Firing/TestPistol_CoreShot_Start_005.wav"
+dest_files=["res://.godot/imported/TestPistol_CoreShot_Start_005.wav-6f0e847b4f7bfc152f4564e55c6d5963.sample"]
 
 [params]
 

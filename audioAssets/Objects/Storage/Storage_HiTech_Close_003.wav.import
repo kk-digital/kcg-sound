@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cqlqkmiwm206f"
-path="res://.godot/imported/Storage_HiTech_Close_003.wav-0dd9fd123380fce63e91d543b7d4ef20.sample"
+path="res://.godot/imported/Storage_HiTech_Close_003.wav-10c31768ca2d160d7a31d3ea235cb1b6.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Objects/Storage/Storage_HiTech_Close_003.wav"
-dest_files=["res://.godot/imported/Storage_HiTech_Close_003.wav-0dd9fd123380fce63e91d543b7d4ef20.sample"]
+source_file="res://engine-sound/audioAssets/Objects/Storage/Storage_HiTech_Close_003.wav"
+dest_files=["res://.godot/imported/Storage_HiTech_Close_003.wav-10c31768ca2d160d7a31d3ea235cb1b6.sample"]
 
 [params]
 

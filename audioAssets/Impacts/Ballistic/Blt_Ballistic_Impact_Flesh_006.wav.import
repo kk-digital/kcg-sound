@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d2glhq1pbiqt"
-path="res://.godot/imported/Blt_Ballistic_Impact_Flesh_006.wav-861333efbd0077bb1d466ca8175c6f2c.sample"
+path="res://.godot/imported/Blt_Ballistic_Impact_Flesh_006.wav-5f5d0118f54cfb3e831555ee8a79fb09.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Impacts/Ballistic/Blt_Ballistic_Impact_Flesh_006.wav"
-dest_files=["res://.godot/imported/Blt_Ballistic_Impact_Flesh_006.wav-861333efbd0077bb1d466ca8175c6f2c.sample"]
+source_file="res://engine-sound/audioAssets/Impacts/Ballistic/Blt_Ballistic_Impact_Flesh_006.wav"
+dest_files=["res://.godot/imported/Blt_Ballistic_Impact_Flesh_006.wav-5f5d0118f54cfb3e831555ee8a79fb09.sample"]
 
 [params]
 

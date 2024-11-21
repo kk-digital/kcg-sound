@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cwko25540lp3g"
-path="res://.godot/imported/Wpn_Atmo_Shared_Medium_LargeIndoors_001.wav-f61ad6aaac613e925b4f43727ce55958.sample"
+path="res://.godot/imported/Wpn_Atmo_Shared_Medium_LargeIndoors_001.wav-75cfff86a4799d8001070e6db6b686e0.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/Shared/Atmo/Wpn_Atmo_Shared_Medium_LargeIndoors_001.wav"
-dest_files=["res://.godot/imported/Wpn_Atmo_Shared_Medium_LargeIndoors_001.wav-f61ad6aaac613e925b4f43727ce55958.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/Shared/Atmo/Wpn_Atmo_Shared_Medium_LargeIndoors_001.wav"
+dest_files=["res://.godot/imported/Wpn_Atmo_Shared_Medium_LargeIndoors_001.wav-75cfff86a4799d8001070e6db6b686e0.sample"]
 
 [params]
 

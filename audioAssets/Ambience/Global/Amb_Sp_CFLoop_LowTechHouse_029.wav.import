@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://6ad2vjcfl6o1"
-path="res://.godot/imported/Amb_Sp_CFLoop_LowTechHouse_029.wav-d4acc025b585bac0d7c0462b3584a30a.sample"
+path="res://.godot/imported/Amb_Sp_CFLoop_LowTechHouse_029.wav-3270754647d27ca615cef505f49201da.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Ambience/Global/Amb_Sp_CFLoop_LowTechHouse_029.wav"
-dest_files=["res://.godot/imported/Amb_Sp_CFLoop_LowTechHouse_029.wav-d4acc025b585bac0d7c0462b3584a30a.sample"]
+source_file="res://engine-sound/audioAssets/Ambience/Global/Amb_Sp_CFLoop_LowTechHouse_029.wav"
+dest_files=["res://.godot/imported/Amb_Sp_CFLoop_LowTechHouse_029.wav-3270754647d27ca615cef505f49201da.sample"]
 
 [params]
 

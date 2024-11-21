@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b0qgefabq5cpv"
-path="res://.godot/imported/Blt_Ballistic_Impact_MetalArmor_004.wav-ded0113ff1ccba89288661ee5b486b1e.sample"
+path="res://.godot/imported/Blt_Ballistic_Impact_MetalArmor_004.wav-d7940ef8934e076eed0b6e835ee5d9b6.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Impacts/Ballistic/Blt_Ballistic_Impact_MetalArmor_004.wav"
-dest_files=["res://.godot/imported/Blt_Ballistic_Impact_MetalArmor_004.wav-ded0113ff1ccba89288661ee5b486b1e.sample"]
+source_file="res://engine-sound/audioAssets/Impacts/Ballistic/Blt_Ballistic_Impact_MetalArmor_004.wav"
+dest_files=["res://.godot/imported/Blt_Ballistic_Impact_MetalArmor_004.wav-d7940ef8934e076eed0b6e835ee5d9b6.sample"]
 
 [params]
 

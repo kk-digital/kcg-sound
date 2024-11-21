@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bx2522p2b8xed"
-path="res://.godot/imported/Machine_CombustionGenerator_EngineLoop_001.wav-af4d147a605f96d0f669923703d0c12a.sample"
+path="res://.godot/imported/Machine_CombustionGenerator_EngineLoop_001.wav-dc818acb2af8a25f154c77bd3990ada3.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Objects/CombustionGenerator/Machine_CombustionGenerator_EngineLoop_001.wav"
-dest_files=["res://.godot/imported/Machine_CombustionGenerator_EngineLoop_001.wav-af4d147a605f96d0f669923703d0c12a.sample"]
+source_file="res://engine-sound/audioAssets/Objects/CombustionGenerator/Machine_CombustionGenerator_EngineLoop_001.wav"
+dest_files=["res://.godot/imported/Machine_CombustionGenerator_EngineLoop_001.wav-dc818acb2af8a25f154c77bd3990ada3.sample"]
 
 [params]
 

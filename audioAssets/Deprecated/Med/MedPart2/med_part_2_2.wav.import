@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b7qbwv8relqp1"
-path="res://.godot/imported/med_part_2_2.wav-2411098019947e66543fe44db8582d45.sample"
+path="res://.godot/imported/med_part_2_2.wav-cc98a9c209ac9a6250d1e8dfa421d71b.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/Med/MedPart2/med_part_2_2.wav"
-dest_files=["res://.godot/imported/med_part_2_2.wav-2411098019947e66543fe44db8582d45.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/Med/MedPart2/med_part_2_2.wav"
+dest_files=["res://.godot/imported/med_part_2_2.wav-cc98a9c209ac9a6250d1e8dfa421d71b.sample"]
 
 [params]
 

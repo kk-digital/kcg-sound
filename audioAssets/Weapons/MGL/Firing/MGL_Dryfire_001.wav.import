@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://tujirs4sq4jp"
-path="res://.godot/imported/MGL_Dryfire_001.wav-59082775d56245894153af0be1d5a262.sample"
+path="res://.godot/imported/MGL_Dryfire_001.wav-eefdccb820137268f0a60ad52b15e58b.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/MGL/Firing/MGL_Dryfire_001.wav"
-dest_files=["res://.godot/imported/MGL_Dryfire_001.wav-59082775d56245894153af0be1d5a262.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/MGL/Firing/MGL_Dryfire_001.wav"
+dest_files=["res://.godot/imported/MGL_Dryfire_001.wav-eefdccb820137268f0a60ad52b15e58b.sample"]
 
 [params]
 

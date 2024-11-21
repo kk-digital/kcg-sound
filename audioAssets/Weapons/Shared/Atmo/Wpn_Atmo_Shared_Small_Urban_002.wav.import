@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://lvtvxubqjfjq"
-path="res://.godot/imported/Wpn_Atmo_Shared_Small_Urban_002.wav-96e7a32518ca4161fe73dfce19ff2a9c.sample"
+path="res://.godot/imported/Wpn_Atmo_Shared_Small_Urban_002.wav-bc27f0c2acf824f2a4dcba1b21c463de.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/Shared/Atmo/Wpn_Atmo_Shared_Small_Urban_002.wav"
-dest_files=["res://.godot/imported/Wpn_Atmo_Shared_Small_Urban_002.wav-96e7a32518ca4161fe73dfce19ff2a9c.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/Shared/Atmo/Wpn_Atmo_Shared_Small_Urban_002.wav"
+dest_files=["res://.godot/imported/Wpn_Atmo_Shared_Small_Urban_002.wav-bc27f0c2acf824f2a4dcba1b21c463de.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bhralhrsb0q4t"
-path="res://.godot/imported/ImpShotgun_CoreBass_Start_006.wav-63640dd5c7ea4c92decbfd0ccf324063.sample"
+path="res://.godot/imported/ImpShotgun_CoreBass_Start_006.wav-67a0edafae6953aa98d2aea475b1cd0a.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Weapons/ImpShotgun/Firing/ImpShotgun_CoreBass_Start_006.wav"
-dest_files=["res://.godot/imported/ImpShotgun_CoreBass_Start_006.wav-63640dd5c7ea4c92decbfd0ccf324063.sample"]
+source_file="res://engine-sound/audioAssets/Weapons/ImpShotgun/Firing/ImpShotgun_CoreBass_Start_006.wav"
+dest_files=["res://.godot/imported/ImpShotgun_CoreBass_Start_006.wav-67a0edafae6953aa98d2aea475b1cd0a.sample"]
 
 [params]
 

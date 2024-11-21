@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cfwdp6ne5vqf3"
-path="res://.godot/imported/Mus_SeptMiltchAmbTest_MainToSil_002_8000_72000_120bpm.ogg-68f9a046767ca0c4ac96999b4fe412f6.oggvorbisstr"
+path="res://.godot/imported/Mus_SeptMiltchAmbTest_MainToSil_002_8000_72000_120bpm.ogg-224ebf3994eeb40b3b74a6f3efe6d14e.oggvorbisstr"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Music/SeptMiltchAmbTest/Mus_SeptMiltchAmbTest_MainToSil_002_8000_72000_120bpm.ogg"
-dest_files=["res://.godot/imported/Mus_SeptMiltchAmbTest_MainToSil_002_8000_72000_120bpm.ogg-68f9a046767ca0c4ac96999b4fe412f6.oggvorbisstr"]
+source_file="res://engine-sound/audioAssets/Music/SeptMiltchAmbTest/Mus_SeptMiltchAmbTest_MainToSil_002_8000_72000_120bpm.ogg"
+dest_files=["res://.godot/imported/Mus_SeptMiltchAmbTest_MainToSil_002_8000_72000_120bpm.ogg-224ebf3994eeb40b3b74a6f3efe6d14e.oggvorbisstr"]
 
 [params]
 

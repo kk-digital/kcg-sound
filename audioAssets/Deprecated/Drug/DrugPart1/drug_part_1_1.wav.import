@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c6jqd76wkil3k"
-path="res://.godot/imported/drug_part_1_1.wav-9efa692a98811280dc5d50e060fc4e50.sample"
+path="res://.godot/imported/drug_part_1_1.wav-051142ba330ae04d8ba0acec82efdf07.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Deprecated/Drug/DrugPart1/drug_part_1_1.wav"
-dest_files=["res://.godot/imported/drug_part_1_1.wav-9efa692a98811280dc5d50e060fc4e50.sample"]
+source_file="res://engine-sound/audioAssets/Deprecated/Drug/DrugPart1/drug_part_1_1.wav"
+dest_files=["res://.godot/imported/drug_part_1_1.wav-051142ba330ae04d8ba0acec82efdf07.sample"]
 
 [params]
 

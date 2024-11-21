@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dabtgd45itdo8"
-path="res://.godot/imported/Amb_Env_CFLoop_CaveDrips_043.wav-317c0680b3280ed5968e86589f25fd8f.sample"
+path="res://.godot/imported/Amb_Env_CFLoop_CaveDrips_043.wav-dd6084df651aff3d22c52c5af8660133.sample"
 
 [deps]
 
-source_file="res://kcg-sound/audioAssets/Ambience/Global/Amb_Env_CFLoop_CaveDrips_043.wav"
-dest_files=["res://.godot/imported/Amb_Env_CFLoop_CaveDrips_043.wav-317c0680b3280ed5968e86589f25fd8f.sample"]
+source_file="res://engine-sound/audioAssets/Ambience/Global/Amb_Env_CFLoop_CaveDrips_043.wav"
+dest_files=["res://.godot/imported/Amb_Env_CFLoop_CaveDrips_043.wav-dd6084df651aff3d22c52c5af8660133.sample"]
 
 [params]
 
